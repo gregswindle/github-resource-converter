@@ -11,7 +11,21 @@
 [![Libscore](https://img.shields.io/libscore/s/project.svg?style=flat-square)]()
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 [![AppVeyor](https://img.shields.io/appveyor/ci/user/repository.svg?style=flat-square)]()
-svg
+
+<!-- ⛔️ AUTO-GENERATED-CONTENT:START (TOC:excludeText=Table of contents) -->
+
+* [Getting started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+  * [Required command-line flags](#required-command-line-flags)
+    * [Example: generate a CSV from a GitHub SaaS (github.com) repository](#example-generate-a-csv-from-a-github-saas-githubcom-repository)
+    * [Example: generate an issues CSV from a GitHub Enterprise repository](#example-generate-an-issues-csv-from-a-github-enterprise-repository)
+  * [Optional command-line flags](#optional-command-line-flags)
+  * [Errors](#errors)
+  * [Info](#info)
+* [License](#license)
+  <!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
 
 ## Getting started
 
@@ -79,7 +93,9 @@ $ grc --owner gregswindle --repo eslint-plugin-crc --dest './docs/gregswindle-es
   <dd>The name of the GitHub (or GitHub Enterprise) repository.</dd>
 </dl>
 
-#### Example: generate a CSV from a GitHub SaaS (github.com) repository
+---
+
+#### Example: generate a CSV of issues from a GitHub SaaS (github.com) repository
 
 Given the URL for `github-resource-converter` (this project):
 
@@ -97,7 +113,9 @@ The minium amount of CLI flags for _all_ issues at
 $ grc --owner gregswindle --repo eslint-plugin-crc
 ```
 
-#### Example: generate an issues CSV from a GitHub Enterprise repository
+---
+
+#### Example: generate a CSV of issues from a GitHub Enterprise repository
 
 Export all issues from a private, on-premise GitHub Enterprise repoository to CSV:
 
@@ -108,6 +126,8 @@ $ grc --host api.ecorp.com \
   --path-prefix 'api/v3'
   --repo ecoin \
 ```
+
+---
 
 ### Optional command-line flags
 
