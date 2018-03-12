@@ -1,6 +1,6 @@
 # github-resource-converter
 
-> Convert GitHub resources (Issues) into CSV, etc.
+> <img align="bottom" alt="issue-opened" height="50" width="50"  src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/issue-opened.svg"> Convert GitHub resources (Issues) into CSV, etc.
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -15,30 +15,29 @@ svg
 
 ## Getting started
 
-## Prerequisites
+### Prerequisites
 
 1.  `github-resource-converter` requires [Node.js](https://nodejs.org/), and `npm`, which installs with Node.js.
 
-1.  To avoid rate-limiting, you should [create a personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/).
+1.  To avoid rate-limiting, you should [create a personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and save your personal access token:
 
-1.  Save your personal access token to a new directory to an `.env` file.
+* **MacOS and Unix:**
 
-**MacOS and Unix:**
+  ```bash
+  $ mkdir -p /usr/local/etc/github-resource-center/envvars/
+  $ touch /usr/local/etc/github-resource-center/envvars/.env
+  $ echo "GITHUB_ACCESS_TOKEN="{your-personal-access-token-value}" > \
+     /usr/local/etc/github-resource-center/envvars/.env
+  ```
 
-```bash
-$ mkdir -p /usr/local/etc/github-resource-center/envvars/
-$ touch /usr/local/etc/github-resource-center/envvars/.env
-$ echo "GITHUB_ACCESS_TOKEN="{your-personal-access-token-value}" > \
-/usr/local/etc/github-resource-center/envvars/.env
-```
+* **Windows:**
 
-**Windows:**
-
-```ini
-> md -p C:\usr\local\etc\github-resource-center\envvars\
-> touch C:\usr\local\etc\github-resource-center\envvars\.env
-> echo "GITHUB_ACCESS_TOKEN="{your-personal-access-token-value}" >> C:\usr\local\etc\github-resource-center\envvars\.env
-```
+  ```shell
+  > md -p C:\usr\local\etc\github-resource-center\envvars\
+  > touch C:\usr\local\etc\github-resource-center\envvars\.env
+  > echo "GITHUB_ACCESS_TOKEN="{your-personal-access-token-value}" >>
+     C:\usr\local\etc\github-resource-center\envvars\.env
+  ```
 
 ### Installation
 
@@ -54,21 +53,181 @@ $ npm i --save github-resource-converter
 
 ## Usage
 
-### From the command-line
+> ![info][icon-octicon-info] The following examples assume that `github-resource-converter` is:
+>
+> 1.  Installed globally, and
+> 1.  Invoked from a Terminal (command-line interface)
+
+Open a terminal and run:
 
 ```bash
-$ github-resource-converter https://github.com/org/repo --dest 'path/to/export.csv'
+$ github-resource-converter \
+  --owner gregswindle \
+  --repo eslint-plugin-crc \
+  --dest './docs/gregswindle-eslint-plugin-crc-issues.csv'
 
-# Or use the alias:
-$ grc https://github.com/org/repo --dest 'path/to/export.csv'
+# Or use the grc alias:
+$ grc --owner gregswindle --repo eslint-plugin-crc --dest './docs/gregswindle-eslint-plugin-crc-issues.csv'
 ```
 
-### Programmatically
+### Required command-line flags
 
-```js
-const githubResourceConverter = require("github-resource-converter");
+<dl>
+  <dt><code>--owner</code></dt>
+  <dd>The GitHub account name or organization name.</dd>
+  <dt><code>--repo</code></dt>
+  <dd>The name of the GitHub (or GitHub Enterprise) repository.</dd>
+</dl>
 
-githubResourceConverter("Rainbow");
+#### Example: generate a CSV from a GitHub SaaS (github.com) repository
+
+Given the URL for `github-resource-converter` (this project):
+
+```HTTP
+https://github.com/gregswindle/github-resource-converter.git
+#                  ⬆️          ⬆️
+#                  owner      repo
+```
+
+The minium amount of CLI flags for _all_ issues at
+`https://github.com/gregswindle/github-resource-converter.git` would therefore be:
+
+```bash
+# Invoke https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues
+$ grc --owner gregswindle --repo eslint-plugin-crc
+```
+
+#### Example: generate an issues CSV from a GitHub Enterprise repository
+
+Export all issues from a private, on-premise GitHub Enterprise repoository to CSV:
+
+```bash
+# Invoke https://api.github.com/repos/gregswindle/eslint-plugin-crc/issues
+$ grc --host api.ecorp.com \
+  --owner evilcorp \
+  --path-prefix 'api/v3'
+  --repo ecoin \
+```
+
+### Optional command-line flags
+
+<dl>
+  <dt><code>--dest</code></dt>
+  <dd>The destination path and file name of the CSV.
+    <br><br>Default value: <code>./issues.csv</code>.
+  </dd>
+  <dt><code>--host</code></dt>
+  <dd>The name of the GitHub (or GitHub Enterprise) repository.
+    <br><br>Default value: <code>api.github.com</code>.
+  </dd>
+  <dt><code>--path-prefix</code></dt>
+  <dd>For GitHub Enterprise instances, the value that must occur to fulfill a REST API v3 request, e.g., <code>api/v3/</code>.
+    <br><br>Default value: "" (an empty <code>string</code>).
+  </dd>
+  <dt><code>--protocol</code></dt>
+  <dd>The access mechanism for the requested repository.
+    <br><br>Default value: <code>https:</code>.
+  </dd>
+</dl>
+
+### Errors
+
+Errors are written to the console (`stdout`) as JSON:
+
+```bash
+# Attempt to fetch issues from a repository that doesn't exist
+$ grc --owner repo --repo foobar
+[github-resource-converter] 2018-03-12T07:44:36.727Z ERROR HttpError: {
+  "name": "github-resource-converter",
+  "hostname": "localhost",
+  "pid": 32036,
+  "level": 50,
+  "err": {
+    "message": {
+      "message": "Not Found",
+      "documentation_url": "https://developer.github.com/v3"
+    },
+    "name": "HttpError",
+    "stack": "HttpError: {\"message\":\"Not Found\",\"documentation_url\":\"https://developer.github.com/v3\"}\n    at response.text.then.message (/Users/swindle/Projects/github/gregswindle/github-resource-converter/node_modules/@octokit/rest/lib/request/request.js:56:19)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+    "code": 404
+  },
+  "msg": {
+    "message": "Not Found",
+    "documentation_url": "https://developer.github.com/v3"
+  },
+  "time": "2018-03-12T07:44:36.727Z",
+  "v": 0
+}
+```
+
+### Info
+
+The `--help` flag displays all options:
+
+```text
+$ grc --help
+Convert GitHub resources (Issues) into CSV, etc.
+
+  Usage
+    $ grc [options] [info]
+    $ github-resource-converter [options] [info]
+  Options
+    --dest, -o       The CSV's destination path and file name.
+                      [Default: './issues.csv']
+    --host, -h        The domain name of the server. Set this value
+                      for GitHub Enterprise instances.
+                      [Default: 'api.github.com']
+    --owner, -o       The GitHub account name or organization name.
+    --path-prefix, -p For GitHub Enterprise instances, the value that
+                      must occur to fulfill a REST API v3 request, e.g.,
+                      'api/v3/'.
+                      [Default: '']
+    --protocol, -s    The access mechanism for the requested repository.
+                      [Default: 'https:']
+    --repo, -r        The name of the GitHub (or GitHub enterprise)
+                      repository.
+  Info
+    --help            Show this dialog.
+    --version         Display the installed semantic version.
+  Examples
+    $ grc --owner github --repo hub
+    // => Exported CSV to /path/of/cwd/issues.csv.
+
+    $ grc --owner github --repo hub -dest './reports/issues/YYYY-MM-DD.csv'
+    // => Exported CSV to /path/to/reports/issues/2018-05-10.csv.
+
+    $ grc --owner repo --repo foobar
+      [github-resource-converter] 2018-03-12T07:36:31.681Z ERROR HttpError: {
+      'name': 'github-resource-converter',
+      'hostname': 'localhost',
+      'pid': 30937,
+      'level': 50,
+      'err': {
+        'message': {
+          'message': 'Not Found',
+          'documentation_url': 'https://developer.github.com/v3'
+        },
+        'name': 'HttpError',
+        'stack': 'HttpError: {"message":"Not Found","documentation_url":"https://developer.github.com/v3"}
+      at response.text.then.message (/Users/swindle/Projects/github/gregswindle/github-resource-converter/node_modules/@octokit/rest/lib/request/request.js:56:19)
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)',
+        'code': 404
+      },
+      'msg': {
+        'message': 'Not Found',
+        'documentation_url': 'https://developer.github.com/v3'
+      },
+      'time': '2018-03-12T07:36:31.681Z',
+      'v': 0
+    }
+```
+
+Use the `--version` flag to see which version you have installed:
+
+```bash
+$ github-resource-converter --version
+# => 1.0.0-alpha
 ```
 
 ## License

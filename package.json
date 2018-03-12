@@ -1,7 +1,7 @@
 {
   "name": "github-resource-converter",
   "description": "Convert GitHub resources (Issues) into CSV, etc.",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha",
   "author": {
     "name": "Greg Swindle",
     "email": "greg@swindle.net",
