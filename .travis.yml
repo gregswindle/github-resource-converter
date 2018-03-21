@@ -8,13 +8,25 @@ os:
   - linux
   - osx
 
+notifications:
+  webhooks: https://app.fossa.io/hooks/travisci
+
+git:
+  depth: 1
+
 before_script:
-  - npm prune
+   - npm dedupe
+#   - npm prune
 
 script:
+  - echo $TRAVIS_BUILD_DIR
+  - echo $(pwd)
+  - npm run test:config
   - npm test
 
-after_script: 'cat ./docs/reports/coverage/lcov.info | coveralls'
+after_script:
+  - npm run posttest:ci:coverage:codacy
+  # - cat $TRAVIS_BUILD_DIR/lib/__tests__/coverage/lcov.info | codacy-coverage
 
 deploy:
   provider: script

@@ -1,6 +1,7 @@
 {
   "name": "github-resource-converter",
-  "description": "Convert GitHub resources (Issues) into CSV, etc.",
+  "description":
+    "Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.",
   "version": "1.0.0-alpha",
   "author": {
     "name": "Greg Swindle",
@@ -32,8 +33,10 @@
   "dependencies": {
     "@octokit/rest": "15.2.1",
     "bunyan": "1.8.12",
+    "bunyan-format": "0.2.1",
     "chalk": "2.3.2",
     "dotenv": "5.0.1",
+    "insight": "0.10.0",
     "jsonexport": "2.0.11",
     "lodash": "4.17.5",
     "meow": "4.0.0",
@@ -45,6 +48,7 @@
     "@semantic-release/npm": "3.2.2",
     "ajv": "6.2.1",
     "ajv-keywords": "3.1.0",
+    "codacy-coverage": "2.1.0",
     "commitplease": "3.2.0",
     "coveralls": "3.0.0",
     "eslint": "4.18.2",
@@ -65,7 +69,8 @@
     "eslint-plugin-xss": "0.1.9",
     "fixpack": "2.3.1",
     "husky": "^0.14.3",
-    "jest": "^22.4.2",
+    "jest": "22.4.2",
+    "jest-runner-eslint": "0.4.0",
     "lec": "^1.0.1",
     "lint-staged": "7.0.0",
     "markdown-magic": "0.1.21",
@@ -79,7 +84,7 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "eslintIgnore": ["lib/__tests_/coverage/**", "world.js"],
+  "eslintIgnore": ["lib/__tests__/coverage/**"],
   "files": ["lib"],
   "homepage": "https://github.com/gregswindle/github-resource-converter#readme",
   "jest": {
@@ -94,19 +99,53 @@
         "statements": 100
       }
     },
-    "projects": ["<rootDir>"],
-    "testEnvironment": "node",
-    "testPathIgnorePatterns": ["lib/__tests__/coverage/"]
+    "moduleDirectories": ["node_modules", "lib"],
+    "testMatch": [
+      "<rootDir>/lib/__tests__/**/*.test.js",
+      "<rootDir>/lib/__tests__/*.test.js"
+    ],
+    "watchman": false
   },
-  "keywords": ["csv", "github", "issue", "issues"],
+  "jest-runner-eslint": {
+    "cliOptions": {
+      "config": ".github/config/jest-runner-eslint.config.json",
+      "fix": true
+    }
+  },
+  "keywords": [
+    "QA",
+    "convert",
+    "converter",
+    "converter",
+    "csv",
+    "export",
+    "github",
+    "google sheets",
+    "issue",
+    "json",
+    "pr",
+    "pull request",
+    "pull-request",
+    "quality assurance",
+    "quality-assurance",
+    "reporting",
+    "reports",
+    "save",
+    "sheets",
+    "spreadsheets",
+    "testing"
+  ],
   "license": "MIT",
   "lint-staged": {
     "*.js": ["npm run lint:js", "git add"],
     "*.json": ["npm run lint:json", "git add"],
-    "*.md": ["npm run lint:md", "git add"]
+    "*.md": ["npm run lint:md", "npm run docs", "git add"]
   },
   "main": "lib/index.js",
-  "prettier": {},
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "repository": "https://github.com/gregswindle/github-resource-converter.git",
   "scripts": {
     "docs": "npm run docs:toc",
@@ -115,11 +154,13 @@
     "lint":
       "npm run lint:js && npm run lint:json && npm run lint:manifest && npm run lint:md",
     "lint:js":
-      "eslint --config '.github/config/.eslintrc.yml' --ignore-path .gitignore --ext .js . --fix",
+      "eslint --config .github/config/.eslintrc.yml --ignore-path .gitignore --ext .js . --fix",
     "lint:json":
       "prettier ./**/*.json --ignore-path '.github/config/.prettierignore' --write",
     "lint:manifest": "fixpack",
     "lint:md": "prettier ./**/*.md -prose-wrap always --write",
+    "posttest:ci:coverage:codacy":
+      "cat ./lib/__tests__/coverage/lcov.info | codacy-coverage",
     "precommit": "lint-staged",
     "prepare": "npm run lint && npm run security",
     "prepublish": "lec lib/cli.js -c LF && nsp check",
@@ -127,6 +168,9 @@
     "pretest": "npm run lint",
     "security": "npm run security:nsp:scan",
     "security:nsp:scan": "nsp check",
-    "test": "jest --forceExit"
+    "test": "jest",
+    "test:config": "jest --showConfig",
+    "test:watch": "jest ./lib/__tests__/*.test.js --watch",
+    "test:watch:all": "jest ./lib/__tests__/*.test.js --watchAll"
   }
 }
