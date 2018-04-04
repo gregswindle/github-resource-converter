@@ -2,7 +2,7 @@
   "name": "github-resource-converter",
   "description":
     "Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "author": {
     "name": "Greg Swindle",
     "email": "greg@swindle.net",
@@ -140,8 +140,7 @@
   "lint-staged": {
     "*.js": ["npm run lint:js", "git add"],
     "*.json": ["npm run lint:json", "git add"],
-    "*.md": ["npm run lint:md", "npm run docs", "git add"],
-    "*": ["npm run docs:changelog", "git add"]
+    "*.md": ["npm run lint:md", "npm run docs", "git add"]
   },
   "main": "lib/index.js",
   "prettier": {
@@ -169,8 +168,7 @@
       "cat ./lib/__tests__/coverage/lcov.info | codacy-coverage",
     "precommit": "lint-staged",
     "prepare": "npm run lint && npm run security",
-    "prepublish":
-      "lec lib/cli.js -c LF && npm run security && semantic-release -d",
+    "prepublish": "lec lib/cli.js -c LF && npm run security",
     "prepublishOnly": "npm run prepare",
     "pretest": "npm run lint",
     "security": "npm run security:nsp:scan",
