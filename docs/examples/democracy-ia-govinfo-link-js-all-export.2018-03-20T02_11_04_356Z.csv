@@ -1,0 +1,275 @@
+allIssuesAndPrs.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/issues/7
+allIssuesAndPrs.repository_url,https://api.github.com/repos/democracy-ia/govinfo-link-js
+allIssuesAndPrs.labels_url,https://api.github.com/repos/democracy-ia/govinfo-link-js/issues/7/labels{/name}
+allIssuesAndPrs.comments_url,https://api.github.com/repos/democracy-ia/govinfo-link-js/issues/7/comments
+allIssuesAndPrs.events_url,https://api.github.com/repos/democracy-ia/govinfo-link-js/issues/7/events
+allIssuesAndPrs.html_url,https://github.com/democracy-ia/govinfo-link-js/issues/7
+allIssuesAndPrs.id,309583334
+allIssuesAndPrs.number,7
+allIssuesAndPrs.title,refactor(client): use unmodified javascript-client from swagger-codegen
+allIssuesAndPrs.user.login,gregswindle
+allIssuesAndPrs.user.id,2849690
+allIssuesAndPrs.user.avatar_url,https://avatars3.githubusercontent.com/u/2849690?v=4
+allIssuesAndPrs.user.gravatar_id,
+allIssuesAndPrs.user.url,https://api.github.com/users/gregswindle
+allIssuesAndPrs.user.html_url,https://github.com/gregswindle
+allIssuesAndPrs.user.followers_url,https://api.github.com/users/gregswindle/followers
+allIssuesAndPrs.user.following_url,https://api.github.com/users/gregswindle/following{/other_user}
+allIssuesAndPrs.user.gists_url,https://api.github.com/users/gregswindle/gists{/gist_id}
+allIssuesAndPrs.user.starred_url,https://api.github.com/users/gregswindle/starred{/owner}{/repo}
+allIssuesAndPrs.user.subscriptions_url,https://api.github.com/users/gregswindle/subscriptions
+allIssuesAndPrs.user.organizations_url,https://api.github.com/users/gregswindle/orgs
+allIssuesAndPrs.user.repos_url,https://api.github.com/users/gregswindle/repos
+allIssuesAndPrs.user.events_url,https://api.github.com/users/gregswindle/events{/privacy}
+allIssuesAndPrs.user.received_events_url,https://api.github.com/users/gregswindle/received_events
+allIssuesAndPrs.user.type,User
+allIssuesAndPrs.user.site_admin,false
+allIssuesAndPrs.labels.id,876945788
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/priority:%20low
+allIssuesAndPrs.labels.name,priority: low
+allIssuesAndPrs.labels.color,c2e0c6
+allIssuesAndPrs.labels.default,false
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.labels.id,876945792
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/status:%20accepted
+allIssuesAndPrs.labels.name,status: accepted
+allIssuesAndPrs.labels.color,009800
+allIssuesAndPrs.labels.default,false
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.labels.id,876945813
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/type:%20breaking%20change
+allIssuesAndPrs.labels.name,type: breaking change
+allIssuesAndPrs.labels.color,b60205
+allIssuesAndPrs.labels.default,false
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.labels.id,876945807
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/type:%20build
+allIssuesAndPrs.labels.name,type: build
+allIssuesAndPrs.labels.color,bfd4f2
+allIssuesAndPrs.labels.default,false
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.labels.id,876945798
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/type:%20docs
+allIssuesAndPrs.labels.name,type: docs
+allIssuesAndPrs.labels.color,bfd4f2
+allIssuesAndPrs.labels.default,false
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.labels.id,876945812
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/type:%20feature
+allIssuesAndPrs.labels.name,type: feature
+allIssuesAndPrs.labels.color,5319e7
+allIssuesAndPrs.labels.default,false
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.state,open
+allIssuesAndPrs.locked,false
+allIssuesAndPrs.assignee.login,gregswindle
+allIssuesAndPrs.assignee.id,2849690
+allIssuesAndPrs.assignee.avatar_url,https://avatars3.githubusercontent.com/u/2849690?v=4
+allIssuesAndPrs.assignee.gravatar_id,
+allIssuesAndPrs.assignee.url,https://api.github.com/users/gregswindle
+allIssuesAndPrs.assignee.html_url,https://github.com/gregswindle
+allIssuesAndPrs.assignee.followers_url,https://api.github.com/users/gregswindle/followers
+allIssuesAndPrs.assignee.following_url,https://api.github.com/users/gregswindle/following{/other_user}
+allIssuesAndPrs.assignee.gists_url,https://api.github.com/users/gregswindle/gists{/gist_id}
+allIssuesAndPrs.assignee.starred_url,https://api.github.com/users/gregswindle/starred{/owner}{/repo}
+allIssuesAndPrs.assignee.subscriptions_url,https://api.github.com/users/gregswindle/subscriptions
+allIssuesAndPrs.assignee.organizations_url,https://api.github.com/users/gregswindle/orgs
+allIssuesAndPrs.assignee.repos_url,https://api.github.com/users/gregswindle/repos
+allIssuesAndPrs.assignee.events_url,https://api.github.com/users/gregswindle/events{/privacy}
+allIssuesAndPrs.assignee.received_events_url,https://api.github.com/users/gregswindle/received_events
+allIssuesAndPrs.assignee.type,User
+allIssuesAndPrs.assignee.site_admin,false
+allIssuesAndPrs.assignees.login,gregswindle
+allIssuesAndPrs.assignees.id,2849690
+allIssuesAndPrs.assignees.avatar_url,https://avatars3.githubusercontent.com/u/2849690?v=4
+allIssuesAndPrs.assignees.gravatar_id,
+allIssuesAndPrs.assignees.url,https://api.github.com/users/gregswindle
+allIssuesAndPrs.assignees.html_url,https://github.com/gregswindle
+allIssuesAndPrs.assignees.followers_url,https://api.github.com/users/gregswindle/followers
+allIssuesAndPrs.assignees.following_url,https://api.github.com/users/gregswindle/following{/other_user}
+allIssuesAndPrs.assignees.gists_url,https://api.github.com/users/gregswindle/gists{/gist_id}
+allIssuesAndPrs.assignees.starred_url,https://api.github.com/users/gregswindle/starred{/owner}{/repo}
+allIssuesAndPrs.assignees.subscriptions_url,https://api.github.com/users/gregswindle/subscriptions
+allIssuesAndPrs.assignees.organizations_url,https://api.github.com/users/gregswindle/orgs
+allIssuesAndPrs.assignees.repos_url,https://api.github.com/users/gregswindle/repos
+allIssuesAndPrs.assignees.events_url,https://api.github.com/users/gregswindle/events{/privacy}
+allIssuesAndPrs.assignees.received_events_url,https://api.github.com/users/gregswindle/received_events
+allIssuesAndPrs.assignees.type,User
+allIssuesAndPrs.assignees.site_admin,false
+allIssuesAndPrs.milestone,
+allIssuesAndPrs.comments,
+allIssuesAndPrs.created_at,2018-03-29T01:00:11Z
+allIssuesAndPrs.updated_at,2018-03-29T09:40:08Z
+allIssuesAndPrs.closed_at,
+allIssuesAndPrs.author_association,OWNER
+allIssuesAndPrs.body,"# Submit an Issue
+
+## 1. Defect or Feature?
+
+> ⌦ Are you **requesting a feature** or **reporting a defect?**
+> ⌦ Type ""Defect"" below for bugs, errors, or faulty behavior.
+> ⌦ Type ""Feature"" for new enhancements.
+
+**Feature**
+
+## 2. User story summary
+
+> ⌦ Describe what you want to accomplish {do something},
+> ⌦ in what role/capacity {role},
+> ⌦ and why it's important to you {achieve value}.
+
+As a Maintainer,
+I want to use the `javascript-client` from `swagger-codegen` without modifications
+In order to increase time-to-market whenever the govinfo-link-service Swagger specification ([`swagger.json`](https://github.com/democracy-ia/govinfo-link-js/blob/master/../blob/master/docs/swagger.json)) is upgraded.
+
+## 3. Acceptance criteria
+
+> ⌦ Acceptance criteria define things that must be `true` when this feature is delivered.
+>
+> **Example**: Job Applicants receive a confirmation email after they submit their resumes.
+
+- [ ] 1.  `swagger-codegen`-based `javascript-client` resources exist in the `/src` directory.
+- [ ] 2.  All API methods have the option to retrieve GovInfo as JSON.
+- [ ] 3.  `govinfo-link-js` is an API Proxy (""wrapper"") that allows consumers to `GET` resources with callbacks, Promises, or async/await keywords.
+- [ ] 4. All documentation reflects API changes.
+- [ ] 5. The following method names have changed:
+- [x] 5.1. [_CodeOfFederalRegulations_](../blob/master/docs/CodeOfFederalRegulations.md ).~~cfrFetchUsingGET~~ :arrow_right: `getByTitleAndPart`
+- [x] 5.2. [_CompilationOfPresidentialDocuments_](../blob/master/docs/CompilationOfPresidentialDocuments.md).~~cpdDcpdFetchUsingGET~~ :arrow_right: `getByYear`
+- [x] 5.3. [_CompilationOfPresidentialDocuments_](../blob/master/docs/CompilationOfPresidentialDocuments.md).~~cpdFetchUsingGET~~ :arrow_right: `getByTypeAndNumber`
+- [x] 5.4. [_CongressionalBills_](../blob/master/docs/CongressionalBills.md).~~billsFetchUsingGET~~ :arrow_right: `getByCongressTypeAndNumber`
+- [x] 5.5. [_CongressionalCalendars_](../blob/master/docs/CongressionalCalendars.md).~~ccalFetchUsingGET~~ :arrow_right: `getByChamberAndSection`
+- [x] 5.6. [_CongressionalCommitteePrints_](../blob/master/docs/CongressionalCommitteePrints.md).~~cprtHouseFetchUsingGET~~ :arrow_right: `getHouseByCongressPrintAndCommitte`
+- [x] 5.7. [_CongressionalCommitteePrints_](../blob/master/docs/CongressionalCommitteePrints.md).~~cprtJacketFetchUsingGET~~ :arrow_right: `getJacketByCongressId`
+- [x] 5.8. [_CongressionalCommitteePrints_](../blob/master/docs/CongressionalCommitteePrints.md).~~cprtSenateFetchUsingGET~~ :arrow_right: `getSenateByCongressAndPrint`
+- [x] 5.9. [_CongressionalDocuments_](../blob/master/docs/CongressionalDocuments.md).~~cdocFetchUsingGET~~ :arrow_right: `getByCongressTypeAndNumber`
+- [x] 5.10. [_CongressionalDocuments_](../blob/master/docs/CongressionalDocuments.md).~~cdocJacketFetchUsingGET~~ :arrow_right: `getJacketByCongressAndId`
+- [x] 5.11. [_CongressionalHearings_](../blob/master/docs/CongressionalHearings.md).~~chrgHouseFetchUsingGET~~ :arrow_right: `getHouseByCongressCommitteeAndSerial`
+- [x] 5.12. [_CongressionalHearings_](../blob/master/docs/CongressionalHearings.md).~~chrgJacketFetchUsingGET~~ :arrow_right: `getJacketByCongressAndId`
+- [x] 5.13. [_CongressionalHearings_](../blob/master/docs/CongressionalHearings.md).~~chrgSenateFetchUsingGET~~ :arrow_right: `getSenateByCongressAndHearing`
+- [x] 5.14. [_CongressionalRecordDaily_](../blob/master/docs/CongressionalRecordDaily.md).~~crecSectionFetchUsingGET~~ :arrow_right: `getBySection`
+- [x] 5.15. [_CongressionalRecordDaily_](../blob/master/docs/CongressionalRecordDaily.md).~~crecTypeFetchUsingGET~~ :arrow_right: `getByCongressTypeAndNumber`
+- [x] 5.16. [_CongressionalRecordDaily_](../blob/master/docs/CongressionalRecordDaily.md).~~crecTypeFetchUsingGET1~~`getByType`
+- [x] 5.17. [_CongressionalRecordDaily_](../blob/master/docs/CongressionalRecordDaily.md).~~crecVolumeFetchUsingGET~~ :arrow_right: `getByVolPrefixAndPage`
+- [x] 5.18. [_CongressionalReports_](../blob/master/docs/CongressionalReports.md).~~crptBillFetchUsingGET~~ :arrow_right: `getByCongressAndBillNumber`
+- [x] 5.19. [_CongressionalReports_](../blob/master/docs/CongressionalReports.md).~~crptReportFetchUsingGET~~ :arrow_right: `getByCongressTypeAndNumber`
+- [x] 5.20. [_FederalRegister_](../blob/master/docs/FederalRegister.md).~~frDocFetchUsingGET~~ :arrow_right: `getByDocNumber`
+- [x] 5.21. [_FederalRegister_](../blob/master/docs/FederalRegister.md).~~frVolumeFetchUsingGET~~ :arrow_right: `getByVolAndPage`
+- [x] 5.22. [_PublicAndPrivateLaws_](../blob/master/docs/PublicAndPrivateLaws.md).~~plawBillFetchUsingGET~~ :arrow_right: `getByCongressAndBillNumber`
+- [x] 5.23. [_PublicAndPrivateLaws_](../blob/master/docs/PublicAndPrivateLaws.md).~~plawStatuteFetchUsingGET~~ :arrow_right: `getByStatuteCitation`
+- [x] 5.24. [_PublicAndPrivateLaws_](../blob/master/docs/PublicAndPrivateLaws.md).~~plawTypeFetchUsingGET~~ :arrow_right: `getByCongressTypeAndNumber`
+- [x] 5.25. [_StatutesAtLarge_](../blob/master/docs/StatutesAtLarge.md).~~statuteTypeFetchUsingGET~~ :arrow_right: `getByCongressTypeAndNumber`
+- [x] 5.26. [_StatutesAtLarge_](../blob/master/docs/StatutesAtLarge.md).~~statuteVolumeFetchUsingGET~~ :arrow_right: `getByVolAndPage`
+- [x] 5.27. [_UnitedStatesCode_](../blob/master/docs/UnitedStatesCode.md).~~uscodeFetchUsingGET~~ :arrow_right: `getByTitleAndSection`
+
+<!-- ⛔️  Do not remove anything below this comment. ⛔️  -->
+"
+allIssuesAndPrs.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/issues/4
+allIssuesAndPrs.repository_url,https://api.github.com/repos/democracy-ia/govinfo-link-js
+allIssuesAndPrs.labels_url,https://api.github.com/repos/democracy-ia/govinfo-link-js/issues/4/labels{/name}
+allIssuesAndPrs.comments_url,https://api.github.com/repos/democracy-ia/govinfo-link-js/issues/4/comments
+allIssuesAndPrs.events_url,https://api.github.com/repos/democracy-ia/govinfo-link-js/issues/4/events
+allIssuesAndPrs.html_url,https://github.com/democracy-ia/govinfo-link-js/issues/4
+allIssuesAndPrs.id,308465431
+allIssuesAndPrs.number,4
+allIssuesAndPrs.title,feat(analytics): track API usage with Google Analytics
+allIssuesAndPrs.user.login,gregswindle
+allIssuesAndPrs.user.id,2849690
+allIssuesAndPrs.user.avatar_url,https://avatars3.githubusercontent.com/u/2849690?v=4
+allIssuesAndPrs.user.gravatar_id,
+allIssuesAndPrs.user.url,https://api.github.com/users/gregswindle
+allIssuesAndPrs.user.html_url,https://github.com/gregswindle
+allIssuesAndPrs.user.followers_url,https://api.github.com/users/gregswindle/followers
+allIssuesAndPrs.user.following_url,https://api.github.com/users/gregswindle/following{/other_user}
+allIssuesAndPrs.user.gists_url,https://api.github.com/users/gregswindle/gists{/gist_id}
+allIssuesAndPrs.user.starred_url,https://api.github.com/users/gregswindle/starred{/owner}{/repo}
+allIssuesAndPrs.user.subscriptions_url,https://api.github.com/users/gregswindle/subscriptions
+allIssuesAndPrs.user.organizations_url,https://api.github.com/users/gregswindle/orgs
+allIssuesAndPrs.user.repos_url,https://api.github.com/users/gregswindle/repos
+allIssuesAndPrs.user.events_url,https://api.github.com/users/gregswindle/events{/privacy}
+allIssuesAndPrs.user.received_events_url,https://api.github.com/users/gregswindle/received_events
+allIssuesAndPrs.user.type,User
+allIssuesAndPrs.user.site_admin,false
+allIssuesAndPrs.labels.id,876945789
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/good%20first%20issue
+allIssuesAndPrs.labels.name,good first issue
+allIssuesAndPrs.labels.color,7057ff
+allIssuesAndPrs.labels.default,true
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.labels.id,876945790
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/help%20wanted
+allIssuesAndPrs.labels.name,help wanted
+allIssuesAndPrs.labels.color,008672
+allIssuesAndPrs.labels.default,true
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.labels.id,876945791
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/priority:%20medium
+allIssuesAndPrs.labels.name,priority: medium
+allIssuesAndPrs.labels.color,fbca04
+allIssuesAndPrs.labels.default,false
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.labels.id,876945796
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/status:%20available
+allIssuesAndPrs.labels.name,status: available
+allIssuesAndPrs.labels.color,bfe5bf
+allIssuesAndPrs.labels.default,false
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.labels.id,876945807
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/type:%20build
+allIssuesAndPrs.labels.name,type: build
+allIssuesAndPrs.labels.color,bfd4f2
+allIssuesAndPrs.labels.default,false
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.labels.id,876945798
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/type:%20docs
+allIssuesAndPrs.labels.name,type: docs
+allIssuesAndPrs.labels.color,bfd4f2
+allIssuesAndPrs.labels.default,false
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.labels.id,876945812
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/type:%20feature
+allIssuesAndPrs.labels.name,type: feature
+allIssuesAndPrs.labels.color,5319e7
+allIssuesAndPrs.labels.default,false
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.labels.id,876947228
+allIssuesAndPrs.labels.url,https://api.github.com/repos/democracy-ia/govinfo-link-js/labels/type:%20test
+allIssuesAndPrs.labels.name,type: test
+allIssuesAndPrs.labels.color,bfd4f2
+allIssuesAndPrs.labels.default,false
+allIssuesAndPrs.labels.description,
+allIssuesAndPrs.state,open
+allIssuesAndPrs.locked,false
+allIssuesAndPrs.assignee,
+allIssuesAndPrs.milestone,
+allIssuesAndPrs.comments,
+allIssuesAndPrs.created_at,2018-03-26T07:48:51Z
+allIssuesAndPrs.updated_at,2018-03-26T07:48:51Z
+allIssuesAndPrs.closed_at,
+allIssuesAndPrs.author_association,OWNER
+allIssuesAndPrs.body,"# Feature request
+
+## 1. User story summary
+
+> ⌦ Describe what you want to accomplish {do something},
+> ⌦ in what role/capacity {role},
+> ⌦ and why it's important to you {achieve value}.
+
+As a maintainer,
+I want to know how the community uses `govinfo-link-js`
+In order to repair defects and improve quality.
+
+## 2. Acceptance criteria
+
+> ⌦ Acceptance criteria define things that must be `true` when this feature is delivered.
+>
+> Example: Job Applicants receive a confirmation email after they submit their resumes.
+
+* [ ] 1.  A `democracy-ia` account exists on Google Analytics (GA).
+* [ ] 2.  Custom dimensions for `OS`, `Node Version`, and `App Version` exist.
+* [ ] 3.  A valid GA tracking code exists.
+* [ ] 4.  `govinfo-link-js` uses [`yeoman/insight`](https://github.com/yeoman/insight/#readme) to track usage.
+* [ ] 5. Valid reports appear on Google Analytics.
+* [ ] 6. @democracy-ia/maintainers traffic are excluded from GA whenever people are acting in the role of Team Maintainer. 
+
+<!-- ⛔️  Do not remove anything below this comment. ⛔️  -->
+"
