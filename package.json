@@ -38,11 +38,10 @@
     "fs-extra": "5.0.0",
     "insight": "0.10.1",
     "jsonexport": "2.0.11",
-    "lodash": "4.17.5",
+    "lodash.isstring": "4.0.1",
     "meow": "4.0.0"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "2.0.1",
     "@semantic-release/git": "4.0.1",
     "@semantic-release/npm": "3.2.4",
     "ajv": "6.4.0",
@@ -56,7 +55,7 @@
     "eslint-config-standard": "11.0.0",
     "eslint-config-xo": "0.20.1",
     "eslint-plugin-import": "2.10.0",
-    "eslint-plugin-jsdoc": "3.6.0",
+    "eslint-plugin-jsdoc": "3.6.2",
     "eslint-plugin-json": "1.2.0",
     "eslint-plugin-no-unsafe-innerhtml": "1.0.16",
     "eslint-plugin-node": "6.0.1",
@@ -72,6 +71,8 @@
     "jest-runner-eslint": "0.4.0",
     "lec": "^1.0.1",
     "lint-staged": "7.0.4",
+    "lodash.isundefined": "3.0.1",
+    "lodash.noop": "3.0.1",
     "markdown-magic": "0.1.21",
     "markdown-magic-dependency-table": "1.3.2",
     "markdown-magic-install-command": "1.3.1",
@@ -140,8 +141,7 @@
   "lint-staged": {
     "*.js": ["npm run lint:js", "git add"],
     "*.json": ["npm run lint:json", "git add"],
-    "*.md": ["npm run lint:md", "npm run docs", "git add"],
-    "*": ["npm run docs:changelog", "git add"]
+    "*.md": ["npm run lint:md", "npm run docs", "git add"]
   },
   "main": "lib/index.js",
   "prettier": {
@@ -154,9 +154,9 @@
   },
   "scripts": {
     "docs": "npm run docs:toc",
-    "docs:changelog": "standard-version -a",
+    "docs:changelog": "standard-version --commit-all",
     "docs:toc":
-      "md-magic --config '.github/config/markdown.config.js' --path '**/*.md' --ignore 'node_modules'",
+      "md-magic --config '.github/config/markdown.config.js' --ignore 'node_modules'",
     "lint":
       "npm run lint:js && npm run lint:json && npm run lint:manifest && npm run lint:md",
     "lint:js":
@@ -169,8 +169,7 @@
       "cat ./lib/__tests__/coverage/lcov.info | codacy-coverage",
     "precommit": "lint-staged",
     "prepare": "npm run lint && npm run security",
-    "prepublish":
-      "lec lib/cli.js -c LF && npm run security && semantic-release -d",
+    "prepublish": "lec lib/cli.js -c LF && npm run security",
     "prepublishOnly": "npm run prepare",
     "pretest": "npm run lint",
     "security": "npm run security:nsp:scan",

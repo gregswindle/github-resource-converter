@@ -89,7 +89,14 @@
 
 ## 2. Installation
 
-1.  **Required:** `github-resource-converter` is written in JavaScript (CommonJS) for [Node.js ![External link][icon-octicon-link-external]](https://nodejs.org/), which must be installed prior to use. Node.js requires **npm**, which is used for installing dependencies. (**npm** installs with Node.js.)
+1.  **Required:** `github-resource-converter` is written in JavaScript (CommonJS) for
+    [Node.js ![External link][icon-octicon-link-external]](https://nodejs.org/) version
+    <!-- AUTO-GENERATED-CONTENT:START (ENGINES) -->
+
+  <!-- AUTO-GENERATED-CONTENT:END -->
+
+which must be installed prior to use.
+Node.js requires **npm**, which is used for installing dependencies. (**npm** installs with Node.js.)
 
 1.  **Recommended:** To avoid rate-limiting, you should [create a personal access token ![External link][icon-octicon-link-external]](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and save your personal access token.
 
