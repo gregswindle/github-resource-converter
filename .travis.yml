@@ -45,4 +45,6 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
+    - npm run standard-version --commit-all
+    - git commit -a --amend --no-edit
     - npx travis-deploy-once "npx semantic-release"
