@@ -41,10 +41,15 @@ after_script:
   - test $TRAVIS_PULL_REQUEST != false
     && sonar-scanner -Dproject.settings=./.github/config/sonar-project.properties -Dsonar.organization=$SONAR_ORGANIZATION -Dsonar.login=$SONAR_TOKEN -X
 
-deploy:
-  provider: script
-  skip_cleanup: true
-  script:
-    - npm run docs:changelog
-    - git commit -a --amend --no-edit
-    - npx travis-deploy-once "npx semantic-release"
+jobs:
+  include:
+    # Define the release stage that runs semantic-release
+    - stage: release
+      node_js: lts/*
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npm run docs:changelog
+          - git commit -a --amend --no-edit
+          - npx travis-deploy-once "npx semantic-release"
