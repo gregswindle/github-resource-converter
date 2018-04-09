@@ -16,9 +16,9 @@ In order to {achieve value}.
 >
 > Example: Job Applicants receive a confirmation email after they submit their resumes.
 
-* [ ] 1.  {criterion-one}
-* [ ] 2.  {criterion-three}
-* [ ] 3.  {criterion-three}
-* [ ] 4.  {criterion-four}
+- [ ] 1.  {criterion-one}
+- [ ] 2.  {criterion-three}
+- [ ] 3.  {criterion-three}
+- [ ] 4.  {criterion-four}
 
 <!-- ⛔️  Do not remove anything below this comment. ⛔️  -->

@@ -8,7 +8,7 @@ Closes #{ISSUE_NUMBER}
 
 ### Acceptance criteria/task completion
 
-* [ ] The acceptance criteria for all associated issues have been completed, tested, and validated.
+- [ ] The acceptance criteria for all associated issues have been completed, tested, and validated.
 
 ## PR check-list
 
@@ -18,11 +18,11 @@ Closes #{ISSUE_NUMBER}
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-* [ ] `ESLint` passes.
+- [ ] `ESLint` passes.
 
 #### 2. **Code quality** [![Quality Gate][sonar-gate-img]][sonar-gate-url]
 
-* [ ] The quality gateways pass with an "A" grade.
+- [ ] The quality gateways pass with an "A" grade.
 
 | Measure               | Scores                                                                                                                                                                                                                                                                                                                                                                                                   |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -35,7 +35,7 @@ Closes #{ISSUE_NUMBER}
 
 #### 3. **Test coverage** [![Coverage Status][sonar-coverage-img]][sonar-coverage-url]
 
-* [ ] The source code is 100% covered with passing specs.
+- [ ] The source code is 100% covered with passing specs.
 
 > **These tasks are not required to open a PR, and may be addressed while the PR is open.**
 
@@ -80,7 +80,7 @@ Closes #{ISSUE_NUMBER}
 
 ### Acceptance criteria/task completion
 
-* [ ] The acceptance criteria for all associated issues have been completed, tested, and validated.
+- [ ] The acceptance criteria for all associated issues have been completed, tested, and validated.
 
 ## PR check-list
 
@@ -90,11 +90,11 @@ Closes #{ISSUE_NUMBER}
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-* [ ] `ESLint` passes.
+- [ ] `ESLint` passes.
 
 #### 2. **Code quality** [![Quality Gate][sonar-gate-img]][sonar-gate-url]
 
-* [ ] The quality gateways pass with an "A" grade.
+- [ ] The quality gateways pass with an "A" grade.
 
 | Measure               | Scores                                                                                                                                                                                                                                                                                                                                                                                                   |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -107,7 +107,7 @@ Closes #{ISSUE_NUMBER}
 
 #### 3. **Test coverage** [![Coverage Status][sonar-coverage-img]][sonar-coverage-url]
 
-* [ ] The source code is 100% covered with passing specs.
+- [ ] The source code is 100% covered with passing specs.
 
 > **These tasks are not required to open a PR, and may be addressed while the PR is open.**
 
