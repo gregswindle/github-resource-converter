@@ -1,6 +1,6 @@
 # `github-resource-converter` [![NPM version][npm-image]][npm-url]
 
-> <img align="bottom" alt="issue-opened" height="50" width="50"  src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/desktop-download.svg"> Convert GitHub Issues and Pull Requests to JSON and CSV from a Terminal or Node.js app.
+> <img align="bottom" alt="issue-opened" height="50" width="50"  src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/desktop-download.svg"> Convert and export GitHub <strong>Issues</strong> and <strong>Pull Requests</strong> to <samp>JSON</samp> and <samp>CSV</samp> from a Terminal or Node.js app.
 
 [![The MIT License][license-image]][license-url]
 [![FOSSA Status][fossa-image]][fossa-url]<br>
@@ -60,7 +60,7 @@
 
 `github-resource-converter` (alias `grc`) exports your GitHub and GitHub Enterprise repositories' Issues and Pull Requests to `CSV` and `JSON` file formats. It's helpful whenever you need to:
 
-* **Use spreadsheets** to analyze, modify, print, or summarize large amounts of data with Pivot Tables and other important financial or statistical operations
+- **Use spreadsheets** to analyze, modify, print, or summarize large amounts of data with Pivot Tables and other important financial or statistical operations
 
   _Example:_
 
@@ -72,7 +72,7 @@
   > # => Saved "foo-bar-issues-export.2018-03-20T02_11_04_356Z.csv".
   > ```
 
-* **Share data** with other tools like GitLab and JIRA.
+- **Share data** with other tools like GitLab and JIRA.
 
   _Example:_
 
@@ -100,7 +100,7 @@ Node.js requires **npm**, which is used for installing dependencies. (**npm** in
 
 1.  **Recommended:** To avoid rate-limiting, you should [create a personal access token ![External link][icon-octicon-link-external]](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and save your personal access token.
 
-    * **MacOS and Unix**
+    - **MacOS and Unix**
 
       ```bash
       $ mkdir -p /usr/local/etc/github-resource-center/envvars/
@@ -109,7 +109,7 @@ Node.js requires **npm**, which is used for installing dependencies. (**npm** in
         /usr/local/etc/github-resource-center/envvars/.env
       ```
 
-    * **Windows**
+    - **Windows**
 
       ```shell
       > md -p C:\usr\local\etc\github-resource-center\envvars\
@@ -142,8 +142,8 @@ $ npm i --save github-resource-converter
 
 > You can convert GitHub (Enterprise) Issues and Pull Requests into two file formats: `CSV` and `JSON`.
 
-* CSV is the default format.
-* JSON formatting requires a `--dest` value with a `.json` file extension.
+- ![CSV]CSV is the default format.
+- JSON formatting requires a `--dest` value with a `.json` file extension.
 
 ### 3.2. Resource types
 
@@ -151,15 +151,15 @@ $ npm i --save github-resource-converter
 
 > Convert and export GitHub (Enterprise) by `--resource-type`: `issues`, `pull_requests`, or both (`all`).
 
-* `issues` is the default `resource-type`.
-* `prs` require a `--resource-type` or `-t` value of
+- `issues` is the default `resource-type`.
+- `prs` require a `--resource-type` or `-t` value of
 
-  * `pr`
-  * `prs`
-  * `pull_request`
-  * `pull_requests`
+  - `pr`
+  - `prs`
+  - `pull_request`
+  - `pull_requests`
 
-* `--resource-type all` will export all `issues` and `prs` into a single file.
+- `--resource-type all` will export all `issues` and `prs` into a single file.
 
 ### 3.3. Filtering
 
@@ -172,7 +172,7 @@ $ npm i --save github-resource-converter
 
 #### 3.4.1. Issues
 
-* **CSV**
+- **CSV**
 
   _GitHub:_
 
@@ -193,7 +193,7 @@ $ npm i --save github-resource-converter
   >   --repo ecoin
   > ```
 
-* **JSON**
+- **JSON**
 
   _GitHub:_
 
@@ -217,7 +217,7 @@ $ npm i --save github-resource-converter
 
 #### 3.4.2. Pull Requests
 
-* **CSV**
+- **CSV**
 
   _GitHub:_
 
@@ -239,7 +239,7 @@ $ npm i --save github-resource-converter
   >   --resource-type pr
   > ```
 
-* **JSON**
+- **JSON**
 
   _GitHub:_
 
@@ -265,7 +265,7 @@ $ npm i --save github-resource-converter
 
 #### 3.4.3. All (open and closed issues and pull requests)
 
-* **CSV**
+- **CSV**
 
   _GitHub:_
 
@@ -277,7 +277,7 @@ $ npm i --save github-resource-converter
   >   --resource-type all
   > ```
 
-* _GitHub Enterprise:_
+  _GitHub Enterprise:_
 
   > ```bash
   > # GET https://api.ecorp.com/api/v3/repos/:owner/:repo/pulls
@@ -287,7 +287,7 @@ $ npm i --save github-resource-converter
   >   --resource-type all
   > ```
 
-* **JSON**
+- **JSON**
 
   _GitHub:_
 
@@ -300,7 +300,7 @@ $ npm i --save github-resource-converter
   >   --dest './export.json'
   > ```
 
-* _GitHub Enterprise:_
+  _GitHub Enterprise:_
 
   > ```bash
   > # GET https://api.ecorp.com/api/v3/repos/:owner/:repo/pulls
@@ -625,7 +625,7 @@ Retrieve all open and closed **issues** for a repository with this proxy method 
 
 #### 4.3.2. Examples
 
-* _**async/await**:_
+- _**async/await**:_
 
   > ```javascript
   > const result = await grc.issues.getForRepo({
@@ -634,7 +634,7 @@ Retrieve all open and closed **issues** for a repository with this proxy method 
   > })
   > ```
 
-* _**Promise**:_
+- _**Promise**:_
 
   > ```javascript
   > grc.issues
@@ -1107,7 +1107,7 @@ Retrieve an array of all open and closed pull requests for a GitHub or GitHub En
 
 #### 4.6.2. Examples
 
-* _**async/await**:_
+- _**async/await**:_
 
   > ```javascript
   > const grc = require('github-resource-coverter')
@@ -1128,7 +1128,7 @@ Retrieve an array of all open and closed pull requests for a GitHub or GitHub En
   > })
   > ```
 
-* _**Promises**:_
+- _**Promises**:_
 
   > ```javascript
   > const grc = require('github-resource-coverter')
@@ -1192,7 +1192,7 @@ Export a collection of Issues or Pull Requests to your local filesystem.
 
 #### 4.7.2. Examples
 
-* _**async/await**:_
+- _**async/await**:_
 
   > ```javascript
   > // Save as JSON
@@ -1202,7 +1202,7 @@ Export a collection of Issues or Pull Requests to your local filesystem.
   > })
   > ```
 
-* _**Promise**:_
+- _**Promise**:_
 
   > ```javascript
   > // Save as CSV
@@ -1243,13 +1243,13 @@ Converts (deeply) nested JSON into CSV format, returning a `Promise<string>`.
 
 #### 4.8.2. Examples
 
-* _**async/await**:_
+- _**async/await**:_
 
   > ```javascript
   > const result = await grc.toCsv(data)
   > ```
 
-* _**Promise**:_
+- _**Promise**:_
 
   > ```javascript
   > grc

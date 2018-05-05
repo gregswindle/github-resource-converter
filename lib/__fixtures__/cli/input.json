@@ -10,8 +10,7 @@
   },
   "pkg": {
     "name": "github-resource-converter",
-    "description":
-      "Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.",
+    "description": "Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.",
     "version": "1.0.0-alpha",
     "author": {
       "name": "Greg Swindle",
@@ -99,8 +98,7 @@
     },
     "eslintIgnore": ["lib/__tests__/coverage/**"],
     "files": ["lib"],
-    "homepage":
-      "https://github.com/gregswindle/github-resource-converter#readme",
+    "homepage": "https://github.com/gregswindle/github-resource-converter#readme",
     "jest": {
       "automock": false,
       "collectCoverage": true,
@@ -180,18 +178,13 @@
     },
     "scripts": {
       "docs": "npm run docs:toc",
-      "docs:toc":
-        "md-magic --config '.github/config/markdown.config.js' --path '**/*.md' --ignore 'node_modules'",
-      "lint":
-        "npm run lint:js && npm run lint:json && npm run lint:manifest && npm run lint:md",
-      "lint:js":
-        "node_modules/.bin/eslint -c .github/config/.eslintrc.yml --ext .js . --fix",
-      "lint:json":
-        "prettier ./**/*.json --ignore-path '.github/config/.prettierignore' --write",
+      "docs:toc": "md-magic --config '.github/config/markdown.config.js' --path '**/*.md' --ignore 'node_modules'",
+      "lint": "npm run lint:js && npm run lint:json && npm run lint:manifest && npm run lint:md",
+      "lint:js": "node_modules/.bin/eslint -c .github/config/.eslintrc.yml --ext .js . --fix",
+      "lint:json": "prettier ./**/*.json --ignore-path '.github/config/.prettierignore' --write",
       "lint:manifest": "fixpack",
       "lint:md": "prettier ./**/*.md -prose-wrap always --write",
-      "posttest:ci:coverage:codacy":
-        "cat ./lib/__tests__/coverage/lcov.info | codacy-coverage",
+      "posttest:ci:coverage:codacy": "cat ./lib/__tests__/coverage/lcov.info | codacy-coverage",
       "precommit": "lint-staged",
       "prepare": "npm run lint && npm run security",
       "prepublish": "lec lib/cli.js -c LF && nsp check",
@@ -207,6 +200,5 @@
     "readme": "ERROR: No README data found!",
     "_id": "github-resource-converter@1.0.0-alpha"
   },
-  "help":
-    "\n  Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.\n\n  Usage\n    $ grc [options] [info]\n    $ github-resource-converter [options] [info]\n  Options\n    --base-url           The GitHub REST API v3 URL origin, or a\n                         GitHub Enterprise URL origin and path-prefix.\n                         [Default: 'https://api.github.com']\n    --dest,          -d  The CSV's destination path and file name.\n[Default: './resources.csv']\n    --no-auto-filename       Don't append an ISO 8601-like timestamp to the\n                         output file.\n      [Default: false]\n    --owner,         -o  The GitHub account name or organization name.\n    --repo,          -r  The name of the GitHub (or GitHub enterprise)\n                         repository.\n    --resource-type, -t  \"issues\", \"prs\", or \"all\".\n                         [Default: 'issues']\n  Info\n    --help    Show this dialog.\n    --version  Display the installed semantic version.\n  Examples\n\n    $ grc --owner github --repo hub\n      // => Exported CSV to /path/of/cwd/issues.csv.\n\n    $ grc --owner github --repo hub -dest './reports/issues/YYYY-MM-DD.csv'\n      // => Exported CSV to /path/to/reports/issues/YYYY-MM-DD.csv.\n\n    $ grc --owner example --repo error\n      // =>\n      [2018-03-19T08:04:06.596Z] ERROR: github-resource-converter/00000 on localhost: Cannot destructure property `data` of 'undefined' or 'null'.\n        TypeError: Cannot destructure property `data` of 'undefined' or 'null'.\n            at paginate (/p/a/t/h/github-resource-converter/lib/base-resource-converter.js:39:16)\n            at <anonymous>\n            at process._tickCallback (internal/process/next_tick.js:188:7)\n"
+  "help": "\n  Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.\n\n  Usage\n    $ grc [options] [info]\n    $ github-resource-converter [options] [info]\n  Options\n    --base-url           The GitHub REST API v3 URL origin, or a\n                         GitHub Enterprise URL origin and path-prefix.\n                         [Default: 'https://api.github.com']\n    --dest,          -d  The CSV's destination path and file name.\n[Default: './resources.csv']\n    --no-auto-filename       Don't append an ISO 8601-like timestamp to the\n                         output file.\n      [Default: false]\n    --owner,         -o  The GitHub account name or organization name.\n    --repo,          -r  The name of the GitHub (or GitHub enterprise)\n                         repository.\n    --resource-type, -t  \"issues\", \"prs\", or \"all\".\n                         [Default: 'issues']\n  Info\n    --help    Show this dialog.\n    --version  Display the installed semantic version.\n  Examples\n\n    $ grc --owner github --repo hub\n      // => Exported CSV to /path/of/cwd/issues.csv.\n\n    $ grc --owner github --repo hub -dest './reports/issues/YYYY-MM-DD.csv'\n      // => Exported CSV to /path/to/reports/issues/YYYY-MM-DD.csv.\n\n    $ grc --owner example --repo error\n      // =>\n      [2018-03-19T08:04:06.596Z] ERROR: github-resource-converter/00000 on localhost: Cannot destructure property `data` of 'undefined' or 'null'.\n        TypeError: Cannot destructure property `data` of 'undefined' or 'null'.\n            at paginate (/p/a/t/h/github-resource-converter/lib/base-resource-converter.js:39:16)\n            at <anonymous>\n            at process._tickCallback (internal/process/next_tick.js:188:7)\n"
 }

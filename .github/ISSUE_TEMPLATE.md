@@ -16,17 +16,17 @@ In order to {achieve value}.
 >
 > Example: Job Applicants receive a confirmation email after they submit their resumes.
 
-* [ ] 1.  {criterion-one}
-* [ ] 2.  {criterion-three}
-* [ ] 3.  {criterion-three}
-* [ ] 4.  {criterion-four}
+- [ ] 1.  {criterion-one}
+- [ ] 2.  {criterion-three}
+- [ ] 3.  {criterion-three}
+- [ ] 4.  {criterion-four}
 
 ## 🐞 3. Steps to reproduce (for defects only)
 
-* > ⌦ Provide a link to a live example, or
-* > ⌦ Replace the examples below with an unambiguous sequence of
+- > ⌦ Provide a link to a live example, or
+- > ⌦ Replace the examples below with an unambiguous sequence of
   > ⌦ instructions that end with proof of the defect.
-* > ⌦ Include source code and log files, if relevant and available.
+- > ⌦ Include source code and log files, if relevant and available.
 
 1.  Enter the words "...." into the "Search" text field.
 2.  Select the Search button.
@@ -37,23 +37,23 @@ In order to {achieve value}.
 
 ## 🐞 4. Your environment (for defects only)
 
-* > ⌦ Include as many relevant details about the environment
+- > ⌦ Include as many relevant details about the environment
   > ⌦ in which the defect occured.
 
-- `github-resource-converter` version:
-- Node.js version (`node --version`):
-- NPM version (`npm --version`):
-- Yarn version (`yarn --version`):
-- Operating System and version (desktop or mobile):
+* `github-resource-converter` version:
+* Node.js version (`node --version`):
+* NPM version (`npm --version`):
+* Yarn version (`yarn --version`):
+* Operating System and version (desktop or mobile):
 
   > **💡 MacOS**
   >
-  > * 1.  Open a Terminal
-  > * 2.  Run
+  > - 1.  Open a Terminal
+  > - 2.  Run
   >       `system_profiler SPHardwareDataType SPSoftwareDataType -detailLevel mini | pbcopy`
-  > * 3.  Paste (<kbd>command ⌘</kbd> + <kbd>v</kbd>) below:
+  > - 3.  Paste (<kbd>command ⌘</kbd> + <kbd>v</kbd>) below:
 
-* Link to your project: N/A
-* Link to RunKit or Repl example:
+- Link to your project: N/A
+- Link to RunKit or Repl example:
 
 <!-- ⛔️  Do not remove anything below this comment. ⛔️  -->
