@@ -80,7 +80,7 @@
     "standard-version": "4.4.0"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=9.0.0"
   },
   "eslintIgnore": [
     "lib/__tests__/**",
