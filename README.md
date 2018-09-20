@@ -420,7 +420,7 @@ Use the `--version` flag to see which version you have installed:
 
 ```bash
 $ github-resource-converter --version
-# => 1.0.1
+# => 1.1.17
 ```
 
 ## 4. API
@@ -703,7 +703,7 @@ Contains default values for `api`, `cli`, and `meta`data.
     "headers": {
       "Accept":
         "application/vnd.github.v3+json, application/vnd.github.symmetra-preview+json",
-      "user-agent": "gregswindle/github-resource-converter v1.0.1"
+        "user-agent": "gregswindle/github-resource-converter v1.1.17"
     },
     "owner": null,
     "repo": null,
@@ -754,7 +754,7 @@ Contains default values for `api`, `cli`, and `meta`data.
       "name": "github-resource-converter",
       "description":
         "Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.",
-      "version": "1.0.1",
+      "version": "1.1.17",
       "author": {
         "name": "Greg Swindle",
         "email": "greg@swindle.net",
@@ -944,7 +944,7 @@ Contains default values for `api`, `cli`, and `meta`data.
         "test:watch:all": "jest ./lib/__tests__/*.test.js --watchAll"
       },
       "readme": "ERROR: No README data found!",
-      "_id": "github-resource-converter@1.0.1"
+      "_id": "github-resource-converter@1.1.17"
     },
     "help":
       "\n  Convert and export GitHub resources--Issues and Pull Requests--to CSV and JSON.\n\n  Usage\n\n    $ grc [options] [info]\n    $ github-resource-converter [options] [info]\n\n  Options\n    --base-url           The GitHub REST API v3 URL origin, or a\n                         GitHub Enterprise URL origin and path-prefix.\n                         [Default: 'https://api.github.com']\n    --dest,          -d  The CSV's destination path and file name.\n                         [Default: './resources.csv']\n    --no-auto-filename       Don't append an ISO 8601-like timestamp to the\n         output file.\n                         [Default: false]\n    --owner,         -o  The GitHub account name or organization name.\n    --repo,          -r  The name of the GitHub (or GitHub enterprise)\n                         repository.\n    --resource-type, -t  \"issues\", \"prs\", or \"all\".\n                         [Default: 'issues']\n\n  Info\n\n    --help     Show this dialog.\n    --version  Display the installed semantic version.\n\n  Examples\n\n    $ grc --owner github --repo hub\n      // => Exported CSV to /path/of/cwd/issues.csv.\n\n    $ grc --owner github --repo hub -dest './reports/issues/YYYY-MM-DD.csv'\n      // => Exported CSV to /path/to/reports/issues/YYYY-MM-DD.csv.\n\n    $ grc --owner example --repo error\n      // =>\n      [2018-03-19T08:04:06.596Z] ERROR: github-resource-converter/00000 on localhost: Cannot destructure property `data` of 'undefined' or 'null'.\n        TypeError: Cannot destructure property `data` of 'undefined' or 'null'.\n            at paginate (/p/a/t/h/github-resource-converter/lib/base-resource-converter.js:39:16)\n            at <anonymous>\n            at process._tickCallback (internal/process/next_tick.js:188:7)\n"
