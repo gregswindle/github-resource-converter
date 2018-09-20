@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* **analytics:** add yeomon/insight ([c4588c2](https://github.com/gregswindle/github-resource-converter/commit/c4588c2)), closes [#20](https://github.com/gregswindle/github-resource-converter/issues/20)
+- **analytics:** add yeomon/insight ([c4588c2](https://github.com/gregswindle/github-resource-converter/commit/c4588c2)), closes [#20](https://github.com/gregswindle/github-resource-converter/issues/20)
 
 <a name="1.0.1"></a>
 
