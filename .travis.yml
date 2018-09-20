@@ -1,11 +1,10 @@
----
 addons:
   sonarcloud:
-    organization:   "$SONAR_ORGANIZATION"
+    organization: '$SONAR_ORGANIZATION'
     token:
-      secure:       "$SONAR_TOKEN"
+      secure: '$SONAR_TOKEN'
     github_token:
-      secure:       "$GITHUB_ACCESS_TOKEN"
+      secure: '$GITHUB_ACCESS_TOKEN'
     branches:
       - master
       - /[build|chore|ci|docs|feat|fix|perf|refactor|revert|spike|style|test]\/.*/
@@ -16,6 +15,7 @@ jdk:
 language: node_js
 
 node_js:
+  - 10
   - 9
   - 8
 
@@ -29,8 +29,10 @@ notifications:
 git:
   depth: 1
 
+install: npm install
+
 before_script:
-   - npm dedupe
+  - npm dedupe
 
 script:
   - npm run test:config

@@ -76,11 +76,11 @@
 
 ![Issues][icon-issue-image]
 
-* **Collaboration starts with _Issues_. Changes happen through _Pull Requests_.**
+- **Collaboration starts with _Issues_. Changes happen through _Pull Requests_.**
 
   View `github-resource-converter's` collaboration and contribution flowcharts:
 
-  ---
+  ***
 
   <details>
 
@@ -90,7 +90,7 @@
 
   </details>
 
-  ---
+  ***
 
   <details>
 
@@ -100,9 +100,9 @@
 
   </details>
 
-  ---
+  ***
 
-* ### 1.1. Create Issues for feature requests and defects.
+- ### 1.1. Create Issues for feature requests and defects.
 
   _Why:_
 
@@ -113,51 +113,51 @@
 
   Go ahead! Get started now:
 
-  * [![Request a feature][issues-new-feat-image]][issues-new-feat-url]
+  - [![Request a feature][issues-new-feat-image]][issues-new-feat-url]
 
-  * [![Report a defect][issues-new-defect-image]][issues-new-defect-url]
+  - [![Report a defect][issues-new-defect-image]][issues-new-defect-url]
 
-  * [Review all open issues][issues-url]
+  - [Review all open issues][issues-url]
 
-* ### 1.2. Format titles with **`type(scope): subject`**.
+- ### 1.2. Format titles with **`type(scope): subject`**.
 
   _Why:_
 
   > ⌦`type` categorizes product changes. Valid types are:
   >
-  > * `build`: Changes that affect the build system or external dependencies.
-  > * `ci`: Changes related to continuous integration, delivery, and deployment tasks.
-  > * `docs`: Documentation changes.
-  > * `feat`: A new feature.
-  > * `fix`: Defect (bug) repair.
-  > * `perf`: Performance enhancements.
-  > * `refactor`: Source code design improvements that don't affect product behavior.
-  > * `style`: Changes involving graphics, typography, etc., as well as source code beautification.
-  > * `test`: Tests added to increase code coverage, or corrected due to errors.
+  > - `build`: Changes that affect the build system or external dependencies.
+  > - `ci`: Changes related to continuous integration, delivery, and deployment tasks.
+  > - `docs`: Documentation changes.
+  > - `feat`: A new feature.
+  > - `fix`: Defect (bug) repair.
+  > - `perf`: Performance enhancements.
+  > - `refactor`: Source code design improvements that don't affect product behavior.
+  > - `style`: Changes involving graphics, typography, etc., as well as source code beautification.
+  > - `test`: Tests added to increase code coverage, or corrected due to errors.
 
-* ### 1.3. Fill out the issue template.
+- ### 1.3. Fill out the issue template.
 
   _Why:_
 
   > ⌦It keeps communication consistent and unambiguous.
 
-* ### 1.4. Label the issue (optional).
+- ### 1.4. Label the issue (optional).
 
   _Why:_
 
   > ⌦ We use [`git-labelmaker`][gh-git-labelmaker-url] to categorize Issues (and Pull Requests) consistently. There are four label categories:
   >
-  > * `type`: the "kind" of product change.
-  > * `status`: the state of a change.
-  > * `priority`: the importance and value of a change.
+  > - `type`: the "kind" of product change.
+  > - `status`: the state of a change.
+  > - `priority`: the importance and value of a change.
 
-* ### 1.5. Monitor your issue for questions.
+- ### 1.5. Monitor your issue for questions.
 
   _Why:_
 
   > ⌦ The team might need more clarification.
 
-* ### 1.6. Your issue will be either accepted for work, or declined.
+- ### 1.6. Your issue will be either accepted for work, or declined.
 
   _Why:_
 
@@ -169,20 +169,20 @@
 
 ![Git Logo][icon-git-logo-image]
 
-* ### 2.1. **Rules**
+- ### 2.1. **Rules**
 
   `github-resource-converter` manages contributions with the [feature-branch-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow).
 
-* #### 2.1.1. Makes changes in a topic branch.
+- #### 2.1.1. Makes changes in a topic branch.
 
   _Why:_
 
   > ⌦ Use an isolated topic branch for parallel product development. Topic branches allow you to submit multiple pull requests without confusion. You can iterate without polluting the master branch with potentially unstable, unfinished code. The `github-resource-converter` team uses:
   >
-  > * [Feature-branch-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow) for small-ish codebases, or
-  > * [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow) for large applications and monoliths
+  > - [Feature-branch-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow) for small-ish codebases, or
+  > - [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow) for large applications and monoliths
 
-* #### 2.1.2. Favor the topic branch naming convention `GH-{ISSUE_NUMBER}-type-scope`.
+- #### 2.1.2. Favor the topic branch naming convention `GH-{ISSUE_NUMBER}-type-scope`.
 
   _Why:_
 
@@ -190,25 +190,25 @@
   >
   > **Examples:**
   >
-  > * **feat**: a new feature, e.g., `GH-1-feat-cli-add-authz`.
-  > * **fix**: a defect/bug repair, e.g., `GH-2-fix-api-logging-error`.
-  > * **build**: changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm), e.g., `GH-8-build-add-markdown-toc`.
-  > * **chore**: changes that don't modify src or test files, e.g., `GH-10-remove-unused-files`.
-  > * **ci**: changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs), e.g., `GH-9-ci-travis-deploy-semantic-release`.
-  > * **docs**: documentation changes, e.g., `GH-3-docs-readme-revise-api`.
-  > * **perf**: change that improves performance `GH-6-perf-quicksort`.
-  > * **refactor**: code changes that improve design, but neither fixes a bug nor adds a feature, e.g., `GH-5-refactor-extract-class`.
-  > * **revert**: reverts a previous commit, e.g., `GH-11-revert-7f87cc2`.
-  > * **style**: changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc), e.g., `GH-4-style-lint`.
-  > * **test**: add missing tests or correct existing tests, e.g., `GH-7-test-complete-coverage`.
+  > - **feat**: a new feature, e.g., `GH-1-feat-cli-add-authz`.
+  > - **fix**: a defect/bug repair, e.g., `GH-2-fix-api-logging-error`.
+  > - **build**: changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm), e.g., `GH-8-build-add-markdown-toc`.
+  > - **chore**: changes that don't modify src or test files, e.g., `GH-10-remove-unused-files`.
+  > - **ci**: changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs), e.g., `GH-9-ci-travis-deploy-semantic-release`.
+  > - **docs**: documentation changes, e.g., `GH-3-docs-readme-revise-api`.
+  > - **perf**: change that improves performance `GH-6-perf-quicksort`.
+  > - **refactor**: code changes that improve design, but neither fixes a bug nor adds a feature, e.g., `GH-5-refactor-extract-class`.
+  > - **revert**: reverts a previous commit, e.g., `GH-11-revert-7f87cc2`.
+  > - **style**: changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc), e.g., `GH-4-style-lint`.
+  > - **test**: add missing tests or correct existing tests, e.g., `GH-7-test-complete-coverage`.
 
-* #### 2.1.3. Branch out from `master`.
+- #### 2.1.3. Branch out from `master`.
 
   _Why:_
 
   > ⌦ `github-resource-converter` follows the feature-branch-workflow.
 
-* #### 2.1.4. **_Never_** push into the `master` branch. **_Always_** submit a Pull Request.
+- #### 2.1.4. **_Never_** push into the `master` branch. **_Always_** submit a Pull Request.
 
   _Why:_
 
@@ -216,7 +216,7 @@
   >
   > It also enables easy peer-review of the code and dedicates forum for discussing the proposed feature.
 
-* #### 2.1.5. Submit a Pull Request as soon as possible.
+- #### 2.1.5. Submit a Pull Request as soon as possible.
 
   _Why:_
 
@@ -224,19 +224,19 @@
   >
   > Pull Request pushes also trigger automated CI-services, which help you fail fast and assess quality.
 
-* #### 2.1.6. Rebase your local `master` branch before you ask for PR approvals.
+- #### 2.1.6. Rebase your local `master` branch before you ask for PR approvals.
 
   _Why:_
 
   > ⌦ Rebasing will merge in the requested branch (`master` or `develop`) and apply the commits that you have made locally to the top of the history without creating a merge commit (assuming there were no conflicts). This results in a nice and clean history.
 
-* #### 2.1.7. Resolve rebase conflicts before Pull Request reviews.
+- #### 2.1.7. Resolve rebase conflicts before Pull Request reviews.
 
   _Why:_
 
   > ⌦ Rebasing will merge in the `master` branch and apply the commits that you have made locally to the top of it.
 
-* #### 2.1.8. Add reviewers and the label `Status: Needs Review` when the topic branch is ready.
+- #### 2.1.8. Add reviewers and the label `Status: Needs Review` when the topic branch is ready.
 
   _Why:_
 
@@ -244,26 +244,26 @@
   >
   > Add the label "Status: Review Needed" formally declares the status of your topic branch, and helps teams filter through issues.
 
-* #### 2.1.9. Delete local and remote topic branches after merging.
+- #### 2.1.9. Delete local and remote topic branches after merging.
 
   _Why:_
 
   > ⌦ Topic branches should only exist while work is in-progress. Merged topic branches clutter up your list of branches with dead branches. Topic branch deletion also insures that you only ever merge back into `master`.
 
-* #### 2.1.10. Protect your `master` branch.
+- #### 2.1.10. Protect your `master` branch.
 
   _Why:_
 
   > ⌦ Branch protection prevents production-ready branches from incorporating unexpected and irreversible changes. Learn more about
   >
-  > * [GitHub protected branches](https://help.github.com/articles/about-protected-branches/) and
-  > * [Bitbucket protected branches](https://confluence.atlassian.com/bitbucketserver/using-branch-permissions-776639807.html).
+  > - [GitHub protected branches](https://help.github.com/articles/about-protected-branches/) and
+  > - [Bitbucket protected branches](https://confluence.atlassian.com/bitbucketserver/using-branch-permissions-776639807.html).
 
-* ### 2.2. **Feature-branch-workflow**
+- ### 2.2. **Feature-branch-workflow**
 
   We use the [feature-branch-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow). We _recommend_ [interactive rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing), too, but that's not required.
 
-- #### 2.2.1. Initialize a Git repository in the product directory (_for new repositories only_).
+* #### 2.2.1. Initialize a Git repository in the product directory (_for new repositories only_).
 
   For subsequent features and changes, this step should be ignored.
 
@@ -272,7 +272,7 @@
   git init
   ```
 
-- #### 2.2.2. Checkout a new `feat`ure or `fix` branch.
+* #### 2.2.2. Checkout a new `feat`ure or `fix` branch.
 
   ```sh
   # For a new feature branch:
@@ -282,7 +282,7 @@
   git checkout -b GH-<issueId>-fix-scope-of-change
   ```
 
-- #### 2.2.3. Make Changes.
+* #### 2.2.3. Make Changes.
 
   ```sh
   git add
@@ -293,7 +293,7 @@
 
   > ⌦ `git commit -a` will start an editor which lets you separate the subject from the body. Read more about it in _section 1.3_.
 
-- #### 2.2.4. Follow the Conventional Commits Specification for commit messages.
+* #### 2.2.4. Follow the Conventional Commits Specification for commit messages.
 
   This project enforces [AngularJS Git Commit Guidelines][git-commit-guidelines-url] (which is now an extension of the [Conventional Commits Specfication][conventional-commits-url]) with [`commitplease`][commitplease-url] pre-commit hooks.
 
@@ -301,7 +301,7 @@
 
   > Consistent, legible Git logs not only facilitate communication, but also enable automated `CHANGELOG` generation and semantic versioning with [`standard-version`][standard-version-url].
 
-  * **`build` commit messages**
+  - **`build` commit messages**
 
     Issues related to product builds.
 
@@ -313,7 +313,7 @@
     <footer>
     ```
 
-  * **`chore` commit messages**
+  - **`chore` commit messages**
 
     Issues related to miscellaneous non-functional changes (usually "maintenance" changes).
 
@@ -325,7 +325,7 @@
     <footer>
     ```
 
-  * **`ci` commit messages**
+  - **`ci` commit messages**
 
     Issues related to continuous integration, delivery, and deployment tasks.
 
@@ -337,7 +337,7 @@
     <footer>
     ```
 
-  * **`docs` commit messages**
+  - **`docs` commit messages**
 
     Issues related to documentation.
 
@@ -349,7 +349,7 @@
     <footer>
     ```
 
-  * **`feat` (feature) commit messages**
+  - **`feat` (feature) commit messages**
 
     New feature or enhancement requests.
 
@@ -361,7 +361,7 @@
     <footer>
     ```
 
-  * **`fix` commit messages**
+  - **`fix` commit messages**
 
     Defect (bug) repair issues.
 
@@ -373,7 +373,7 @@
     <footer>
     ```
 
-  * **`perf` (performance) commit messages**
+  - **`perf` (performance) commit messages**
 
     Performance improvement issues.
 
@@ -385,7 +385,7 @@
     <footer>
     ```
 
-  * **`refactor` commit messages**
+  - **`refactor` commit messages**
 
     Source code design **improvements that do not affect product behavior**.
 
@@ -397,7 +397,7 @@
     <footer>
     ```
 
-  * **`revert` commit messages**
+  - **`revert` commit messages**
 
     Tasks that revert to a previous commit hash. Your message should begin with `revert:`, followed by the header of the reverted commit.
 
@@ -411,7 +411,7 @@
     <footer>
     ```
 
-  * **`style` commit messages**
+  - **`style` commit messages**
 
     Issues related to style guideline compliance, especially `ESLint` errors and warnings.
 
@@ -423,7 +423,7 @@
     <footer>
     ```
 
-  * **`test` commit messages**
+  - **`test` commit messages**
 
     Test coverage tasks.
 
@@ -435,7 +435,7 @@
     <footer>
     ```
 
-- #### 2.2.5. Sync with remote to get changes you’ve missed.
+* #### 2.2.5. Sync with remote to get changes you’ve missed.
 
   ```sh
   git checkout master
@@ -446,7 +446,7 @@
 
   > ⌦ This will give you a chance to deal with conflicts on your machine while rebasing(later) rather than creating a Pull Request that contains conflicts.
 
-- #### 2.2.6. Update your topic branch with the latest changes from `master` by interactive rebase.
+* #### 2.2.6. Update your topic branch with the latest changes from `master` by interactive rebase.
 
   ```sh
   git checkout <branchname>
@@ -459,7 +459,7 @@
   >
   > [Learn more about autosquashing Git commits][autosquashing-git-commits-url].
 
-- #### 2.2.7. Resolve conflicts (if any occur), and continue rebase.
+* #### 2.2.7. Resolve conflicts (if any occur), and continue rebase.
 
   ```sh
   git add <file1> <file2> ...
@@ -468,7 +468,7 @@
 
   [Learn more about resolving conflicts][git-resolve-conflicts-url].
 
-- #### 2.2.8. Push your branch with the `-f` flag (if necessary).
+* #### 2.2.8. Push your branch with the `-f` flag (if necessary).
 
   Rebase changes history, so you might need to force changes into the `remote` branch with the `-f` flag. If someone else is working on your branch, use the less destructive `--force-with-lease`.
 
@@ -482,11 +482,11 @@
   >
   > [Learn more about `--force-with-lease`][force-with-lease-url].
 
-- #### 2.2.9. Submit a Pull Request.
+* #### 2.2.9. Submit a Pull Request.
 
-- #### 2.2.10. Once accepted, the Pull request will be merged, closed, and deleted by an administrator.
+* #### 2.2.10. Once accepted, the Pull request will be merged, closed, and deleted by an administrator.
 
-- #### 2.2.11. Remove your local topic branch if you're done.
+* #### 2.2.11. Remove your local topic branch if you're done.
 
   ```sh
   git branch -d <branchname>
@@ -505,11 +505,11 @@
 
 [![JavaScript Style Guide][standard-js-badge-image]][standard-js-url] [![ESLint logo][eslint-logo-image]][eslint-url]
 
-* ### 3.1. Use the Standard JS Style.
+- ### 3.1. Use the Standard JS Style.
 
   `github-resource-converter` follows the [Standard JS Style][standard-js-url].
 
-* ### 3.2. Use ESLint to analyze source code.
+- ### 3.2. Use ESLint to analyze source code.
 
   _Why:_
 
@@ -527,23 +527,23 @@
 
 [![Jest JavaScript Testing][jest-logo-image]][jest-url]
 
-* ### 4.1. Write Jest tests.
+- ### 4.1. Write Jest tests.
 
   _Why:_
 
   > ⌦ Behavior-driven development specifications are executable documentation.
 
-  * **Put test files in the \*\*test\*\* directory.**
+  - **Put test files in the \*\*test\*\* directory.**
 
-  * **Use the `.spec.js` suffix for all tests.**
+  - **Use the `.spec.js` suffix for all tests.**
 
-* ### 4.2. Reach 100% code coverage.
+- ### 4.2. Reach 100% code coverage.
 
   _Why:_
 
   > ⌦ Full coverage makes automated dependency drift updates safer.
 
-  * View a test coverage summary in the Terminal:
+  - View a test coverage summary in the Terminal:
 
     ```shell
     npm test
@@ -567,7 +567,7 @@
     ----------|----------|----------|----------|----------|----------------|
     ```
 
-  * Open `/coverage/lcov-report/index.html` in a Web browser to view detailed coverage reports.
+  - Open `/coverage/lcov-report/index.html` in a Web browser to view detailed coverage reports.
 
 ## 5. **Directory structure**
 
@@ -720,15 +720,15 @@
 <!-- AUTO-GENERATED-CONTENT:START (DEPENDENCYTABLE:production=true) -->
 | **Dependency** | **Description** | **Version** | **License** | **Type** |
 | -------------- | --------------- | ----------- | ----------- | -------- |
- | [@octokit/rest@15.2.6](https://github.com/octokit/rest.js#readme) | GitHub REST API client for Node.js | 15.2.6 | MIT | production | 
+ | [@octokit/rest@15.12.0](https://github.com/octokit/rest.js#readme) | GitHub REST API client for Node.js | 15.12.0 | MIT | production | 
  | [bunyan@1.8.12](https://github.com/trentm/node-bunyan#readme) | a JSON logging library for node.js services | 1.8.12 | MIT | production | 
  | [bunyan-format@0.2.1](https://github.com/thlorenz/bunyan-format) | Writable stream that formats bunyan records that are piped into it. | 0.2.1 | [object Object] | production | 
- | [dotenv@5.0.1](https://github.com/motdotla/dotenv#readme) | Loads environment variables from .env file | 5.0.1 | BSD-2-Clause | production | 
- | [fs-extra@5.0.0](https://github.com/jprichardson/node-fs-extra) | fs-extra contains methods that aren't included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf. | 5.0.0 | MIT | production | 
+ | [dotenv@6.0.0](https://github.com/motdotla/dotenv#readme) | Loads environment variables from .env file | 6.0.0 | BSD-2-Clause | production | 
+ | [fs-extra@7.0.0](https://github.com/jprichardson/node-fs-extra) | fs-extra contains methods that aren't included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf. | 7.0.0 | MIT | production | 
  | [insight@0.10.1](https://github.com/yeoman/insight#readme) | Understand how your tool is being used by anonymously reporting usage metrics to Google Analytics or Yandex.Metrica | 0.10.1 | BSD-2-Clause | production | 
- | [jsonexport@2.0.11](https://github.com/kauegimenes/jsonexport) | Makes easy to convert JSON to CSV | 2.0.11 | ISC | production | 
+ | [jsonexport@2.3.0](https://github.com/kauegimenes/jsonexport) | Makes easy to convert JSON to CSV | 2.3.0 | Apache-2.0 | production | 
  | [lodash.isstring@4.0.1](https://lodash.com/) | The lodash method `_.isString` exported as a module. | 4.0.1 | MIT | production | 
- | [meow@4.0.0](https://github.com/sindresorhus/meow#readme) | CLI app helper | 4.0.0 | MIT | production | 
+ | [meow@5.0.0](https://github.com/sindresorhus/meow#readme) | CLI app helper | 5.0.0 | MIT | production | 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ### 7.2. Development
@@ -738,45 +738,43 @@
 <!-- AUTO-GENERATED-CONTENT:START (DEPENDENCYTABLE:dev=true) -->
 | **Dependency** | **Description** | **Version** | **License** | **Type** |
 | -------------- | --------------- | ----------- | ----------- | -------- |
- | [@semantic-release/git@4.0.1](https://github.com/semantic-release/git#readme) | Set of semantic-release plugins to publish to a git repository | 4.0.1 | MIT | dev | 
- | [@semantic-release/npm@3.2.4](https://github.com/semantic-release/npm#readme) | Set of semantic-release plugins to publish to a npm registry | 3.2.4 | MIT | dev | 
- | [ajv@6.4.0](https://github.com/epoberezkin/ajv) | Another JSON Schema Validator | 6.4.0 | MIT | dev | 
- | [ajv-keywords@3.1.0](https://github.com/epoberezkin/ajv-keywords#readme) | Custom JSON-Schema keywords for Ajv validator | 3.1.0 | MIT | dev | 
- | [codacy-coverage@2.1.1](https://github.com/codacy/node-codacy-coverage) | Code Coverage reporter for Codacy.com | 2.1.1 | MIT | dev | 
+ | [@semantic-release/git@7.0.4](https://github.com/semantic-release/git#readme) | Set of semantic-release plugins to publish to a git repository | 7.0.4 | MIT | dev | 
+ | [@semantic-release/npm@5.0.4](https://github.com/semantic-release/npm#readme) | Set of semantic-release plugins to publish to a npm registry | 5.0.4 | MIT | dev | 
+ | [ajv@6.5.3](https://github.com/epoberezkin/ajv) | Another JSON Schema Validator | 6.5.3 | MIT | dev | 
+ | [ajv-keywords@3.2.0](https://github.com/epoberezkin/ajv-keywords#readme) | Custom JSON-Schema keywords for Ajv validator | 3.2.0 | MIT | dev | 
+ | [codacy-coverage@3.0.0](https://github.com/codacy/node-codacy-coverage) | Code Coverage reporter for Codacy.com | 3.0.0 | MIT | dev | 
  | [commitplease@3.2.0](https://github.com/jzaefferer/commitplease#readme) | Validates strings as commit messages | 3.2.0 | MIT | dev | 
- | [coveralls@3.0.0](https://github.com/nickmerwin/node-coveralls#readme) | takes json-cov output into stdin and POSTs to coveralls.io | 3.0.0 | BSD-2-Clause | dev | 
- | [eslint@4.19.1](https://eslint.org) | An AST-based pattern checker for JavaScript. | 4.19.1 | MIT | dev | 
- | [eslint-config-prettier@^2.4.0](https://github.com/prettier/eslint-config-prettier#readme) | Turns off all rules that are unnecessary or might conflict with Prettier. | 2.9.0 | MIT | dev | 
- | [eslint-config-scanjs@1.0.0-beta4](https://github.com/mozfreddyb/eslint-config-scanjs#readme) | umbrella config to get scanjs-like functionality from eslint | 1.0.0-beta4 | MPL-2.0 | dev | 
- | [eslint-config-standard@11.0.0](https://github.com/standard/eslint-config-standard) | JavaScript Standard Style - ESLint Shareable Config | 11.0.0 | MIT | dev | 
- | [eslint-config-xo@0.20.1](https://github.com/xojs/eslint-config-xo#readme) | ESLint shareable config for XO | 0.20.1 | MIT | dev | 
- | [eslint-plugin-import@2.10.0](https://github.com/benmosher/eslint-plugin-import) | Import with sanity. | 2.10.0 | MIT | dev | 
- | [eslint-plugin-jsdoc@3.6.2](https://github.com/gajus/eslint-plugin-jsdoc#readme) | JSDoc linting rules for ESLint. | 3.6.2 | BSD-3-Clause | dev | 
- | [eslint-plugin-json@1.2.0](https://github.com/azeemba/eslint-plugin-json#readme) | Lint JSON files | 1.2.0 | ISC | dev | 
+ | [coveralls@3.0.2](https://github.com/nickmerwin/node-coveralls#readme) | takes json-cov output into stdin and POSTs to coveralls.io | 3.0.2 | BSD-2-Clause | dev | 
+ | [eslint@5.6.0](https://eslint.org) | An AST-based pattern checker for JavaScript. | 5.6.0 | MIT | dev | 
+ | [eslint-config-prettier@3.0.1](https://github.com/prettier/eslint-config-prettier#readme) | Turns off all rules that are unnecessary or might conflict with Prettier. | 3.0.1 | MIT | dev | 
+ | [eslint-config-standard@12.0.0](https://github.com/standard/eslint-config-standard) | JavaScript Standard Style - ESLint Shareable Config | 12.0.0 | MIT | dev | 
+ | [eslint-config-xo@0.25.0](https://github.com/xojs/eslint-config-xo#readme) | ESLint shareable config for XO | 0.25.0 | MIT | dev | 
+ | [eslint-plugin-import@2.14.0](https://github.com/benmosher/eslint-plugin-import) | Import with sanity. | 2.14.0 | MIT | dev | 
+ | [eslint-plugin-jsdoc@3.8.0](https://github.com/gajus/eslint-plugin-jsdoc#readme) | JSDoc linting rules for ESLint. | 3.8.0 | BSD-3-Clause | dev | 
+ | [eslint-plugin-json@1.2.1](https://github.com/azeemba/eslint-plugin-json#readme) | Lint JSON files | 1.2.1 | ISC | dev | 
  | [eslint-plugin-no-unsafe-innerhtml@1.0.16](https://github.com/mozfreddyb/eslint-plugin-no-unsafe-innerhtml/) | custom ESLint rule to disallows unsafe innerHTML, outerHTML and insertAdjacentHTML | 1.0.16 | MPL-2.0 | dev | 
- | [eslint-plugin-node@6.0.1](https://github.com/mysticatea/eslint-plugin-node#readme) | Additional ESLint's rules for Node.js | 6.0.1 | MIT | dev | 
- | [eslint-plugin-prettier@^2.2.0](https://github.com/prettier/eslint-plugin-prettier#readme) | Runs prettier as an eslint rule | 2.6.0 | MIT | dev | 
- | [eslint-plugin-promise@3.7.0](https://github.com/xjamundx/eslint-plugin-promise#readme) | Enforce best practices for JavaScript promises | 3.7.0 | ISC | dev | 
+ | [eslint-plugin-node@7.0.1](https://github.com/mysticatea/eslint-plugin-node#readme) | Additional ESLint's rules for Node.js | 7.0.1 | MIT | dev | 
+ | [eslint-plugin-prettier@2.6.2](https://github.com/prettier/eslint-plugin-prettier#readme) | Runs prettier as an eslint rule | 2.6.2 | MIT | dev | 
+ | [eslint-plugin-promise@4.0.1](https://github.com/xjamundx/eslint-plugin-promise#readme) | Enforce best practices for JavaScript promises | 4.0.1 | ISC | dev | 
  | [eslint-plugin-security@1.4.0](https://github.com/nodesecurity/eslint-plugin-security#readme) | Security rules for eslint | 1.4.0 | Apache-2.0 | dev | 
- | [eslint-plugin-standard@3.0.1](https://github.com/xjamundx/eslint-plugin-standard#readme) | ESlint Plugin for the Standard Linter | 3.0.1 | MIT | dev | 
- | [eslint-plugin-unicorn@4.0.3](https://github.com/sindresorhus/eslint-plugin-unicorn#readme) | Various awesome ESLint rules | 4.0.3 | MIT | dev | 
+ | [eslint-plugin-standard@4.0.0](https://github.com/standard/eslint-plugin-standard#readme) | ESlint Plugin for the Standard Linter | 4.0.0 | MIT | dev | 
+ | [eslint-plugin-unicorn@6.0.1](https://github.com/sindresorhus/eslint-plugin-unicorn#readme) | Various awesome ESLint rules | 6.0.1 | MIT | dev | 
  | [eslint-plugin-xss@0.1.9](https://github.com/Rantanen/eslint-plugin-xss#readme) | Validates XSS related issues of mixing HTML and non-HTML content in variables. | 0.1.9 | ISC | dev | 
  | [fixpack@2.3.1](https://github.com/henrikjoreteg/fixpack) | cli tool that cleans up package.json files. | 2.3.1 | MIT | dev | 
  | [husky@^0.14.3](https://github.com/typicode/husky) | Prevents bad commit or push (git hooks, pre-commit/precommit, pre-push/prepush, post-merge/postmerge and all that stuff...) | 0.14.3 | MIT | dev | 
- | [jest@22.4.3](http://facebook.github.io/jest/) | Delightful JavaScript Testing. | 22.4.3 | MIT | dev | 
- | [jest-runner-eslint@0.4.0](https://github.com/jest-community/jest-runner-eslint) | An experimental ESLint runner for Jest | 0.4.0 | MIT | dev | 
+ | [jest@23.6.0](https://jestjs.io/) | Delightful JavaScript Testing. | 23.6.0 | MIT | dev | 
+ | [jest-runner-eslint@0.6.0](https://github.com/jest-community/jest-runner-eslint) | An experimental ESLint runner for Jest | 0.6.0 | MIT | dev | 
  | [lec@^1.0.1](https://github.com/iShafayet/lec) | Command Line Wrapper for Line Ending Corrector (An utility that makes sure your files have consistent line endings) | 1.0.1 | MIT | dev | 
- | [lint-staged@7.0.4](https://github.com/okonet/lint-staged#readme) | Lint files staged by git | 7.0.4 | MIT | dev | 
+ | [lint-staged@7.2.2](https://github.com/okonet/lint-staged#readme) | Lint files staged by git | 7.2.2 | MIT | dev | 
  | [lodash.isundefined@3.0.1](https://lodash.com/) | The modern build of lodash’s `_.isUndefined` as a module. | 3.0.1 | MIT | dev | 
  | [lodash.noop@3.0.1](https://lodash.com/) | The lodash method `_.noop` exported as a module. | 3.0.1 | MIT | dev | 
- | [markdown-magic@0.1.21](https://github.com/DavidWells/markdown-magic#readme) | Automatically update markdown files with content from external sources | 0.1.21 | MIT | dev | 
+ | [markdown-magic@0.1.25](https://github.com/DavidWells/markdown-magic#readme) | Automatically update markdown files with content from external sources | 0.1.25 | MIT | dev | 
  | [markdown-magic-dependency-table@1.3.2](https://github.com/camacho/markdown-magic-dependency-table#readme) | Generate table of information about dependencies automatically in markdown | 1.3.2 | MIT | dev | 
  | [markdown-magic-install-command@1.3.1](https://github.com/camacho/markdown-magic-install-command#readme) | Print install command for markdown file | 1.3.1 | MIT | dev | 
  | [markdown-magic-package-scripts@1.2.1](https://github.com/camacho/markdown-magic-package-scripts#readme) | Print list of scripts in package.json with descriptions | 1.2.1 | MIT | dev | 
- | [nsp@^3.2.1](https://github.com/nodesecurity/nsp#readme) | The Node Security (nodesecurity.io) command line interface | 3.2.1 | Apache-2.0 | dev | 
- | [prettier@1.11.1](https://prettier.io) | Prettier is an opinionated code formatter | 1.11.1 | MIT | dev | 
- | [semantic-release@15.1.5](https://github.com/semantic-release/semantic-release#readme) | Automated semver compliant package publishing | 15.1.5 | MIT | dev | 
- | [standard-version@4.3.0](https://github.com/conventional-changelog/standard-version#readme) | replacement for `npm version` with automatic CHANGELOG generation | 4.3.0 | ISC | dev | 
+ | [prettier@1.14.3](https://prettier.io) | Prettier is an opinionated code formatter | 1.14.3 | MIT | dev | 
+ | [semantic-release@15.9.16](https://github.com/semantic-release/semantic-release#readme) | Automated semver compliant package publishing | 15.9.16 | MIT | dev | 
+ | [standard-version@4.4.0](https://github.com/conventional-changelog/standard-version#readme) | replacement for `npm version` with automatic CHANGELOG generation | 4.4.0 | ISC | dev | 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ### 7.3. Optional
@@ -790,7 +788,7 @@
 
 ![APIs][icon-rest-api-image]
 
-* ### 8.1 **API design**
+- ### 8.1 **API design**
 
   _Why:_
 
@@ -800,40 +798,40 @@
 
   > ⌦ Lack of consistency and simplicity can massively increase integration and maintenance costs. Which is why `API design` is included in this document.
 
-- We mostly follow resource-oriented design. It has three main factors: resources, collection, and URLs.
+* We mostly follow resource-oriented design. It has three main factors: resources, collection, and URLs.
 
-  * A resource has data, gets nested, and there are methods that operate against it.
-  * A group of resources is called a collection.
-  * URL identifies the online location of resource or collection.
+  - A resource has data, gets nested, and there are methods that operate against it.
+  - A group of resources is called a collection.
+  - URL identifies the online location of resource or collection.
 
   _Why:_
 
   > ⌦ This is a very well-known design to developers (your main API consumers). Apart from readability and ease of use, it allows us to write generic libraries and connectors without even knowing what the API is about.
 
-- Use kebab-case for URLs.
-- Use camelCase for parameters in the query string or resource fields.
-- Use plural kebab-case for resource names in URLs.
+* Use kebab-case for URLs.
+* Use camelCase for parameters in the query string or resource fields.
+* Use plural kebab-case for resource names in URLs.
 
-- Always use a plural nouns for naming a url pointing to a collection: `/users`.
+* Always use a plural nouns for naming a url pointing to a collection: `/users`.
 
   _Why:_
 
   > ⌦ Basically, it reads better and keeps URLs consistent. [read more...](https://apigee.com/about/blog/technology/restful-api-design-plural-nouns-and-concrete-names)
 
-- In the source code convert plurals to variables and properties with a List suffix.
+* In the source code convert plurals to variables and properties with a List suffix.
 
   _Why_:
 
   > ⌦ Plural is nice in the URL but in the source code, it’s just too subtle and error-prone.
 
-- Always use a singular concept that starts with a collection and ends to an identifier:
+* Always use a singular concept that starts with a collection and ends to an identifier:
 
   ```
   /students/245743
   /airports/kjfk
   ```
 
-- Avoid URLs like this:
+* Avoid URLs like this:
 
   ```
   GET /blogs/:blogId/posts/:postId/summary
@@ -843,13 +841,13 @@
 
   > ⌦ This is not pointing to a resource but to a property instead. You can pass the property as a parameter to trim your response.
 
-- Keep verbs out of your resource URLs.
+* Keep verbs out of your resource URLs.
 
   _Why:_
 
   > ⌦ Because if you use a verb for each resource operation you soon will have a huge list of URLs and no consistent pattern which makes it difficult for developers to learn. Plus we use verbs for something else.
 
-- Use verbs for non-resources. In this case, your API doesn't return any resources. Instead, you execute an operation and return the result. These **are not** CRUD (create, retrieve, update, and delete) operations:
+* Use verbs for non-resources. In this case, your API doesn't return any resources. Instead, you execute an operation and return the result. These **are not** CRUD (create, retrieve, update, and delete) operations:
 
   ```
   /translate?text=Hallo
@@ -859,25 +857,25 @@
 
   > ⌦ Because for CRUD we use HTTP methods on `resource` or `collection` URLs. The verbs we were talking about are actually `Controllers`. You usually don't develop many of these. [read more...](https://byrondover.github.io/post/restful-api-guidelines/#controller)
 
-- The request body or response type is JSON then please follow `camelCase` for `JSON` property names to maintain the consistency.
+* The request body or response type is JSON then please follow `camelCase` for `JSON` property names to maintain the consistency.
 
   _Why:_
 
   > ⌦ This is a JavaScript project guideline, Where Programming language for generating JSON as well as Programming language for parsing JSON are assumed to be JavaScript.
 
-- Even though a resource is a singular concept that is similar to an object instance or database record, you should not use your `table_name` for a resource name and `column_name` resource property.
+* Even though a resource is a singular concept that is similar to an object instance or database record, you should not use your `table_name` for a resource name and `column_name` resource property.
 
   _Why:_
 
   > ⌦ Because your intention is to expose Resources, not your database schema details.
 
-- Again, only use nouns in your URL when naming your resources and don’t try to explain their functionality.
+* Again, only use nouns in your URL when naming your resources and don’t try to explain their functionality.
 
   _Why:_
 
   > ⌦ Only use nouns in your resource URLs, avoid endpoints like `/addNewUser` or `/updateUser` . Also avoid sending resource operations as a parameter.
 
-- Explain the CRUD functionalities using HTTP methods:
+* Explain the CRUD functionalities using HTTP methods:
 
   _How:_
 
@@ -891,7 +889,7 @@
 
   > `DELETE`: Delete existing resources.
 
-* For nested resources, use the relation between them in the URL. For instance, using `id` to relate an employee to a company.
+- For nested resources, use the relation between them in the URL. For instance, using `id` to relate an employee to a company.
 
   _Why:_
 
@@ -909,7 +907,7 @@
 
   > `POST /schools` , should create a new school and return the details of the new school created. Use POST on collection-URLs.
 
-* Use a simple ordinal number for a version with a `v` prefix (v1, v2). Move it all the way to the left in the URL so that it has the highest scope:
+- Use a simple ordinal number for a version with a `v` prefix (v1, v2). Move it all the way to the left in the URL so that it has the highest scope:
 
   ```
   http://api.domain.com/v1/schools/3/students
@@ -919,15 +917,14 @@
 
   > ⌦ When your APIs are public for other third parties, upgrading the APIs with some breaking change would also lead to breaking the existing products or services using your APIs. Using versions in your URL can prevent that from happening. [read more...](https://apigee.com/about/blog/technology/restful-api-design-tips-versioning)
 
-* Response messages must be self-descriptive. A good error message response might look something like this:
+- Response messages must be self-descriptive. A good error message response might look something like this:
 
   ```json
   {
     "code": 404,
     "level": "ERROR",
     "logger": "[http-logger]",
-    "message":
-      "No resource found at URL /archetypes/v1/locales/iso-country-codes/BS",
+    "message": "No resource found at URL /archetypes/v1/locales/iso-country-codes/BS",
     "timestamp": 1504878062000
   }
   ```
@@ -962,7 +959,7 @@
 
   _Note: Keep security exception messages as generic as possible. For instance, Instead of saying ‘incorrect password’, you can reply back saying ‘invalid username or password’ so that we don’t unknowingly inform user that username was indeed correct and only the password was incorrect._
 
-* Use only these 8 status codes to send with you response to describe whether **everything worked**,
+- Use only these 8 status codes to send with you response to describe whether **everything worked**,
   The **client app did something wrong** or The **API did something wrong**.
 
   _Which ones:_
@@ -987,101 +984,100 @@
 
   > ⌦ Most API providers use a small subset HTTP status codes. For example, the Google GData API uses only 10 status codes, Netflix uses 9, and Digg, only 8. Of course, these responses contain a body with additional information.There are over 70 HTTP status codes. However, most developers don't have all 70 memorized. So if you choose status codes that are not very common you will force application developers away from building their apps and over to wikipedia to figure out what you're trying to tell them. [read more...](https://apigee.com/about/blog/technology/restful-api-design-what-about-errors)
 
-- Provide total numbers of resources in your response.
-- Accept `limit` and `offset` parameters.
+* Provide total numbers of resources in your response.
+* Accept `limit` and `offset` parameters.
 
-- The amount of data the resource exposes should also be taken into account. The API consumer doesn't always need the full representation of a resource.Use a fields query parameter that takes a comma separated list of fields to include:
+* The amount of data the resource exposes should also be taken into account. The API consumer doesn't always need the full representation of a resource.Use a fields query parameter that takes a comma separated list of fields to include:
   ```
   GET /student?fields=id,name,age,class
   ```
-- Pagination, filtering, and sorting don’t need to be supported from start for all resources. Document those resources that offer filtering and sorting.
+* Pagination, filtering, and sorting don’t need to be supported from start for all resources. Document those resources that offer filtering and sorting.
 
-- ### 8.2 **API security**
+* ### 8.2 **API security**
 
   These are some basic security best practices:
 
-  * Don't use basic authentication unless over a secure connection (HTTPS). Authentication tokens must not be transmitted in the URL: `GET /users/123?token=asdf....`
+  - Don't use basic authentication unless over a secure connection (HTTPS). Authentication tokens must not be transmitted in the URL: `GET /users/123?token=asdf....`
 
     _Why:_
 
     > ⌦ Because Token, or user ID and password are passed over the network as clear text (it is base64 encoded, but base64 is a reversible encoding), the basic authentication scheme is not secure. [read more...](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)
 
-  * Tokens must be transmitted using the Authorization header on every request: `Authorization: Bearer xxxxxx, Extra yyyyy`.
+  - Tokens must be transmitted using the Authorization header on every request: `Authorization: Bearer xxxxxx, Extra yyyyy`.
 
-  * Authorization Code should be short-lived.
+  - Authorization Code should be short-lived.
 
-  * Reject any non-TLS requests by not responding to any HTTP request to avoid any insecure data exchange. Respond to HTTP requests by `403 Forbidden`.
+  - Reject any non-TLS requests by not responding to any HTTP request to avoid any insecure data exchange. Respond to HTTP requests by `403 Forbidden`.
 
-  * Consider using Rate Limiting.
+  - Consider using Rate Limiting.
 
     _Why:_
 
     > ⌦ To protect your APIs from bot threats that call your API thousands of times per hour. You should consider implementing rate limit early on.
 
-  * Setting HTTP headers appropriately can help to lock down and secure your web application. [read more...](https://github.com/helmetjs/helmet)
+  - Setting HTTP headers appropriately can help to lock down and secure your web application. [read more...](https://github.com/helmetjs/helmet)
 
-  * Your API should convert the received data to their canonical form or reject them. Return 400 Bad Request with details about any errors from bad or missing data.
+  - Your API should convert the received data to their canonical form or reject them. Return 400 Bad Request with details about any errors from bad or missing data.
 
-  * All the data exchanged with the ReST API must be validated by the API.
+  - All the data exchanged with the ReST API must be validated by the API.
 
-  * Serialize your JSON.
+  - Serialize your JSON.
 
     _Why:_
 
     > ⌦ A key concern with JSON encoders is preventing arbitrary JavaScript remote code execution within the browser... or, if you're using node.js, on the server. It's vital that you use a proper JSON serializer to encode user-supplied data properly to prevent the execution of user-supplied input on the browser.
 
-  * Validate the content-type and mostly use `application/*json` (Content-Type header).
+  - Validate the content-type and mostly use `application/*json` (Content-Type header).
 
     _Why:_
 
     > ⌦ For instance, accepting the `application/x-www-form-urlencoded` mime type allows the attacker to create a form and trigger a simple POST request. The server should never assume the Content-Type. A lack of Content-Type header or an unexpected Content-Type header should result in the server rejecting the content with a `4XX` response.
 
-- ### 8.3 **API documentation**
+* ### 8.3 **API documentation**
 
-  * Fill the `API Reference` section in [README.md template](./README.sample.md) for API.
-  * Describe API authentication methods with a code sample.
-  * Explaining The URL Structure (path only, no root URL) including The request type (Method).
+  - Fill the `API Reference` section in [README.md template](./README.sample.md) for API.
+  - Describe API authentication methods with a code sample.
+  - Explaining The URL Structure (path only, no root URL) including The request type (Method).
 
   For each endpoint explain:
 
-  * URL Params If URL Params exist, specify them in accordance with name mentioned in URL section:
+  - URL Params If URL Params exist, specify them in accordance with name mentioned in URL section:
 
     ```
     Required: id=[integer]
     Optional: photo_id=[alphanumeric]
     ```
 
-  * If the request type is POST, provide working examples. URL Params rules apply here too. Separate the section into Optional and Required.
+  - If the request type is POST, provide working examples. URL Params rules apply here too. Separate the section into Optional and Required.
 
-  * **Success Responses.** What should be the status code and is there any return data? This is useful when people need to know what their callbacks should expect:
+  - **Success Responses.** What should be the status code and is there any return data? This is useful when people need to know what their callbacks should expect:
 
     ```
     Code: 200
     Content: { id : 12 }
     ```
 
-  * **Error Responses.** Most endpoints have many ways to fail. From unauthorized access to wrongful parameters etc. All of those should be listed here. It might seem repetitive, but it helps prevent assumptions from being made. For example:
+  - **Error Responses.** Most endpoints have many ways to fail. From unauthorized access to wrongful parameters etc. All of those should be listed here. It might seem repetitive, but it helps prevent assumptions from being made. For example:
 
-    * **HTTP status code**
+    - **HTTP status code**
 
       ```
       404 Not Found
       ```
 
-    * **Response body**
+    - **Response body**
 
       ```json
       {
         "code": 404,
         "level": "ERROR",
         "logger": "[http-logger]",
-        "message":
-          "No resource found at URL /archetypes/v1/locales/iso-country-codes/BS",
+        "message": "No resource found at URL /archetypes/v1/locales/iso-country-codes/BS",
         "timestamp": 1504878062000
       }
       ```
 
-    * **Response headers**
+    - **Response headers**
       ```
       accept-ranges: bytes
       access-control-allow-headers: Authorization
@@ -1099,7 +1095,7 @@
       vary: Accept-Encoding
       ```
 
-  * Use API design tools, There are lots of open source tools for good documentation such as [API Blueprint](https://apiblueprint.org/) and [Swagger](https://swagger.io/).
+  - Use API design tools, There are lots of open source tools for good documentation such as [API Blueprint](https://apiblueprint.org/) and [Swagger](https://swagger.io/).
 
 ## 9. **Licensing**
 
