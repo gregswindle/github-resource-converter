@@ -65,7 +65,6 @@
   * [7.1. Production](#71-production)
   * [7.2. Development](#72-development)
   * [7.3. Optional](#73-optional)
-  * [7.3. Optional](#73-optional-1)
 - [8. **APIs**](#8-apis)
   * [8.1 **API design**](#81-api-design)
   * [8.2 **API security**](#82-api-security)
@@ -776,13 +775,6 @@
  | [prettier@1.14.3](https://prettier.io) | Prettier is an opinionated code formatter | 1.14.3 | MIT | dev | 
  | [semantic-release@15.9.16](https://github.com/semantic-release/semantic-release#readme) | Automated semver compliant package publishing | 15.9.16 | MIT | dev | 
  | [standard-version@4.4.0](https://github.com/conventional-changelog/standard-version#readme) | replacement for `npm version` with automatic CHANGELOG generation | 4.4.0 | ISC | dev | 
-<!-- AUTO-GENERATED-CONTENT:END -->
-
-### 7.3. Optional
-
-<!-- AUTO-GENERATED-CONTENT:START (DEPENDENCYTABLE:optional=true) -->
-| **Dependency** | **Description** | **Version** | **License** | **Type** |
-| -------------- | --------------- | ----------- | ----------- | -------- |
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ### 7.3. Optional
