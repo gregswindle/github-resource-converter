@@ -738,11 +738,13 @@
 <!-- AUTO-GENERATED-CONTENT:START (DEPENDENCYTABLE:dev=true) -->
 | **Dependency** | **Description** | **Version** | **License** | **Type** |
 | -------------- | --------------- | ----------- | ----------- | -------- |
+ | [@semantic-release/changelog@3.0.0](https://github.com/semantic-release/changelog#readme) | Set of semantic-release plugins for creating or updating a changelog file | 3.0.0 | MIT | dev | 
  | [@semantic-release/git@7.0.4](https://github.com/semantic-release/git#readme) | Set of semantic-release plugins to publish to a git repository | 7.0.4 | MIT | dev | 
+ | [@semantic-release/github@5.0.5](https://github.com/semantic-release/github#readme) | Set of semantic-release plugins for publishing a GitHub release | 5.0.5 | MIT | dev | 
  | [@semantic-release/npm@5.0.4](https://github.com/semantic-release/npm#readme) | Set of semantic-release plugins to publish to a npm registry | 5.0.4 | MIT | dev | 
  | [ajv@6.5.3](https://github.com/epoberezkin/ajv) | Another JSON Schema Validator | 6.5.3 | MIT | dev | 
  | [ajv-keywords@3.2.0](https://github.com/epoberezkin/ajv-keywords#readme) | Custom JSON-Schema keywords for Ajv validator | 3.2.0 | MIT | dev | 
- | [codacy-coverage@3.0.0](https://github.com/codacy/node-codacy-coverage) | Code Coverage reporter for Codacy.com | 3.0.0 | MIT | dev | 
+ | [codacy-coverage@3.1.0](https://github.com/codacy/node-codacy-coverage) | Code Coverage reporter for Codacy.com | 3.1.0 | MIT | dev | 
  | [commitplease@3.2.0](https://github.com/jzaefferer/commitplease#readme) | Validates strings as commit messages | 3.2.0 | MIT | dev | 
  | [coveralls@3.0.2](https://github.com/nickmerwin/node-coveralls#readme) | takes json-cov output into stdin and POSTs to coveralls.io | 3.0.2 | BSD-2-Clause | dev | 
  | [eslint@5.6.0](https://eslint.org) | An AST-based pattern checker for JavaScript. | 5.6.0 | MIT | dev | 
@@ -760,12 +762,11 @@
  | [eslint-plugin-standard@4.0.0](https://github.com/standard/eslint-plugin-standard#readme) | ESlint Plugin for the Standard Linter | 4.0.0 | MIT | dev | 
  | [eslint-plugin-unicorn@6.0.1](https://github.com/sindresorhus/eslint-plugin-unicorn#readme) | Various awesome ESLint rules | 6.0.1 | MIT | dev | 
  | [eslint-plugin-xss@0.1.9](https://github.com/Rantanen/eslint-plugin-xss#readme) | Validates XSS related issues of mixing HTML and non-HTML content in variables. | 0.1.9 | ISC | dev | 
- | [fixpack@2.3.1](https://github.com/henrikjoreteg/fixpack) | cli tool that cleans up package.json files. | 2.3.1 | MIT | dev | 
  | [husky@^0.14.3](https://github.com/typicode/husky) | Prevents bad commit or push (git hooks, pre-commit/precommit, pre-push/prepush, post-merge/postmerge and all that stuff...) | 0.14.3 | MIT | dev | 
  | [jest@23.6.0](https://jestjs.io/) | Delightful JavaScript Testing. | 23.6.0 | MIT | dev | 
  | [jest-runner-eslint@0.6.0](https://github.com/jest-community/jest-runner-eslint) | An experimental ESLint runner for Jest | 0.6.0 | MIT | dev | 
  | [lec@^1.0.1](https://github.com/iShafayet/lec) | Command Line Wrapper for Line Ending Corrector (An utility that makes sure your files have consistent line endings) | 1.0.1 | MIT | dev | 
- | [lint-staged@7.2.2](https://github.com/okonet/lint-staged#readme) | Lint files staged by git | 7.2.2 | MIT | dev | 
+ | [lint-staged@7.3.0](https://github.com/okonet/lint-staged#readme) | Lint files staged by git | 7.3.0 | MIT | dev | 
  | [lodash.isundefined@3.0.1](https://lodash.com/) | The modern build of lodash’s `_.isUndefined` as a module. | 3.0.1 | MIT | dev | 
  | [lodash.noop@3.0.1](https://lodash.com/) | The lodash method `_.noop` exported as a module. | 3.0.1 | MIT | dev | 
  | [markdown-magic@0.1.25](https://github.com/DavidWells/markdown-magic#readme) | Automatically update markdown files with content from external sources | 0.1.25 | MIT | dev | 
@@ -774,7 +775,6 @@
  | [markdown-magic-package-scripts@1.2.1](https://github.com/camacho/markdown-magic-package-scripts#readme) | Print list of scripts in package.json with descriptions | 1.2.1 | MIT | dev | 
  | [prettier@1.14.3](https://prettier.io) | Prettier is an opinionated code formatter | 1.14.3 | MIT | dev | 
  | [semantic-release@15.9.16](https://github.com/semantic-release/semantic-release#readme) | Automated semver compliant package publishing | 15.9.16 | MIT | dev | 
- | [standard-version@4.4.0](https://github.com/conventional-changelog/standard-version#readme) | replacement for `npm version` with automatic CHANGELOG generation | 4.4.0 | ISC | dev | 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ### 7.3. Optional

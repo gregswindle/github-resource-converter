@@ -170,3 +170,4 @@ typings/
 
 .scannerwork/
 .github/config/outdated.js
+.github/config/outdated.json
