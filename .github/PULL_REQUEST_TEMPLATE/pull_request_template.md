@@ -1,4 +1,4 @@
-# ![git-pull-request][octicon-git-pull-request] Pull request (PR)
+# <img height="50" width="50" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/git-pull-request.svg"> Pull request (PR)
 
 _Please describe your changes here._
 
